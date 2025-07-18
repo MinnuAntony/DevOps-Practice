@@ -1,0 +1,4 @@
+GIT Notes:
+
+-> Open Source Distributed Version Control System
+
