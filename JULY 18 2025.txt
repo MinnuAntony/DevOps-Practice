@@ -1,0 +1,49 @@
+JULY 18 2025
+
+DOCKER - 
+->isolated system where products can be run irrespective of the environment/machine
+-> lightweight containers with all the dependencies to run a project
+-> adv :
+docker is faster than vm
+portable
+
+-> docker uses docker engines
+-> apt install docker.io (installation in linux)
+->docker  images : like packets of data which can be run on any OS , when dockers are run these images are actaully run
+* build a docker image 
+
+================================
+4 things - Docker,Container,Volumes,Networking
+What is Docker ? 
+# VM : mimics a physical machine
+# multiple vms can be run on a single machine
+* Docker container will make u feel s if ur using a VM 
+containers: if it fits into a container it ships
+ZDO = Zero Down 
+
+for example if there is a python application created by a developer and he sends it to Q/A along with the PYTHON and other dependencies required for the application to run.
+This can be carried till production
+
+to create a Container- first create an image
+from one image we can create any number of containers
+(for linux distributions only) as they interact with the kernel
+? can a dcoker image created in linux can be used in windows/mac 
+ans: WSL 
+
+Docker is designed to work with linux
+
+* containers are create from local images (can be pulled from remote)
+* client contacted the daemon
+* daemon pulls the required image from Docker HUb
+* to see stopped conatiners : docker ps -a
+
+as containers have no OS they are stopped when there are no pr processes running (?)
+stops running : when docker run ubuntu (?)
+doesnt stop when running : 
+ docker run -it ubuntu bash
+ docker run ubuntu ps -ef
+ 
+ -it : interactive and terminal access
+ 
+ port forwarding?
+ 
