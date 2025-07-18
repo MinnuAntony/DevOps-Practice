@@ -1,4 +1,9 @@
 GIT Notes:
 
 -> Open Source Distributed Version Control System
+->  4 main areas : 
+* working area
+* staging area
+* local repo
+* remote repo
 
