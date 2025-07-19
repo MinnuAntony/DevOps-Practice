@@ -7,3 +7,93 @@ GIT Notes:
 * local repo
 * remote repo
 
+1. Brief History of Git
+-------------------------------
+- Developed in 2005 by Linus Torvalds (creator of Linux Kernel)
+- Linux Kernel team was using BitKeeper (proprietary tool)
+- BitKeeper revoked its free usage license for Linux community
+- Linus Torvalds and the community created Git as a replacement
+  - Speed
+  - Simplicity
+  - Strong support for non-linear development (branches)
+  - Fully distributed system
+  - Efficient handling of very large projects like the Linux Kernel
+
+2. Evolution of Version Control
+-------------------------------
+
+A) Local Version Control Systems (Local VCS)
+- Pros:
+  - Simple
+  - Easy for individual use
+- Cons:
+  - Error-prone
+  - Manual copying leads to mistakes
+  - Difficult history tracking
+
+B) Centralized Version Control Systems (CVCS)
+- Pros:
+  - Central server holds the repository and history
+  - Easier team collaboration
+  - Supports access control
+- Cons:
+  - Single point of failure (if server is down, work stops)
+  - Requires network connectivity
+  - History is tied to server
+
+C) Distributed Version Control Systems (DVCS)
+- Pros:
+  - Every user has a full copy of the repository with complete history
+  - Local operations are fast (log, diff, checkout)
+  - Work offline is possible
+  - No single point of failure
+  - Easy branching and merging
+- Cons:
+  - Slightly more complex for beginners
+- Examples: Git
+
+
+3. About Distributed VCS (Git)
+-------------------------------
+- Git is a distributed version control system
+- Every user has a full copy of the repository including full history
+- Most operations (status, log, diff, checkout) are local and fast
+- Only git push and git pull need network access
+- Git is designed to ensure data safety and prevent data loss
+
+Three States in Git Workflow:
+- Modified: File is changed but not staged
+- Staged: File is marked to be committed
+- Committed: File changes saved to local Git database
+
+Core Components:
+- Working Directory: Actual files you work on
+- Staging Area (Index): Area where changes are prepared for commit
+- Git Directory (.git): Where Git stores all data and history
+
+
+4. Basic Git Commands
+
+Clone an existing repository:
+git clone <repo-url>
+
+Add files to staging area:
+git add <filename>
+git add .   (adds all files)
+
+Commit changes:
+git commit -m "Your commit message"
+
+Push to remote repository:
+git push origin <branch-name>
+git push origin main
+
+Create a new branch:
+git branch <branch-name>
+
+Switch between branches:
+git checkout <branch-name>
+
+
+
+
