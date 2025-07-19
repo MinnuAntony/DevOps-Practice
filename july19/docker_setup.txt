@@ -1,0 +1,432 @@
+minnu@hplaptop-minnu:~$ cd Downloads
+minnu@hplaptop-minnu:~/Downloads$ ssh -i Minnu.pem ubuntu@3.15.192.88
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 6.8.0-1029-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Jul 19 07:53:53 UTC 2025
+
+  System load:  0.0               Processes:             110
+  Usage of /:   22.6% of 7.57GB   Users logged in:       1
+  Memory usage: 5%                IPv4 address for eth0: 172.31.14.205
+  Swap usage:   0%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+New release '24.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Sat Jul 19 07:42:08 2025 from 117.216.224.170
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@ip-172-31-14-205:~$ sudo apt-get update
+Hit:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+Get:4 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:5 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Get:6 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/universe Translation-en [5652 kB]
+Get:7 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]
+Get:8 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [217 kB]
+Get:9 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/multiverse Translation-en [112 kB]
+Get:10 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B]
+Get:11 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [2757 kB]
+Get:12 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [437 kB]
+Get:13 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [4038 kB]
+Get:14 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [729 kB]
+Get:15 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1224 kB]
+Get:16 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [302 kB]
+Get:17 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [28.7 kB]
+Get:18 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [59.5 kB]
+Get:19 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [14.2 kB]
+Get:20 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [592 B]
+Get:21 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [68.8 kB]
+Get:22 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [11.4 kB]
+Get:23 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [392 B]
+Get:24 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:25 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [30.0 kB]
+Get:26 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16.5 kB]
+Get:27 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [672 B]
+Get:28 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:29 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [2510 kB]
+Get:30 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [374 kB]
+Get:31 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [3877 kB]
+Get:32 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [699 kB]
+Get:33 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [991 kB]
+Get:34 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [215 kB]
+Get:35 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [21.7 kB]
+Get:36 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [40.3 kB]
+Get:37 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [8908 B]
+Get:38 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [368 B]
+Fetched 39.2 MB in 25s (1592 kB/s)                                             
+Reading package lists... Done
+ubuntu@ip-172-31-14-205:~$ sudo apt-get install ca-certificates curl gnupg lsb-release -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+lsb-release is already the newest version (11.1.0ubuntu4).
+lsb-release set to manually installed.
+ca-certificates is already the newest version (20240203~22.04.1).
+ca-certificates set to manually installed.
+curl is already the newest version (7.81.0-1ubuntu1.20).
+curl set to manually installed.
+The following additional packages will be installed:
+  dirmngr gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client gpg-wks-server
+  gpgconf gpgsm gpgv
+Suggested packages:
+  pinentry-gnome3 tor parcimonie xloadimage scdaemon
+The following packages will be upgraded:
+  dirmngr gnupg gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client
+  gpg-wks-server gpgconf gpgsm gpgv
+11 upgraded, 0 newly installed, 0 to remove and 69 not upgraded.
+Need to get 2248 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Get:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gpg-wks-client amd64 2.2.27-3ubuntu2.4 [62.7 kB]
+Get:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 dirmngr amd64 2.2.27-3ubuntu2.4 [293 kB]
+Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gpg-wks-server amd64 2.2.27-3ubuntu2.4 [57.5 kB]
+Get:4 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gnupg-utils amd64 2.2.27-3ubuntu2.4 [309 kB]
+Get:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gpg-agent amd64 2.2.27-3ubuntu2.4 [209 kB]
+Get:6 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gpg amd64 2.2.27-3ubuntu2.4 [518 kB]
+Get:7 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gpgconf amd64 2.2.27-3ubuntu2.4 [94.5 kB]
+Get:8 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gnupg-l10n all 2.2.27-3ubuntu2.4 [54.7 kB]
+Get:9 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gnupg all 2.2.27-3ubuntu2.4 [315 kB]
+Get:10 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gpgsm amd64 2.2.27-3ubuntu2.4 [197 kB]
+Get:11 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gpgv amd64 2.2.27-3ubuntu2.4 [137 kB]
+Fetched 2248 kB in 0s (29.5 MB/s)
+(Reading database ... 65977 files and directories currently installed.)
+Preparing to unpack .../00-gpg-wks-client_2.2.27-3ubuntu2.4_amd64.deb ...
+Unpacking gpg-wks-client (2.2.27-3ubuntu2.4) over (2.2.27-3ubuntu2.3) ...
+Preparing to unpack .../01-dirmngr_2.2.27-3ubuntu2.4_amd64.deb ...
+Unpacking dirmngr (2.2.27-3ubuntu2.4) over (2.2.27-3ubuntu2.3) ...
+Preparing to unpack .../02-gpg-wks-server_2.2.27-3ubuntu2.4_amd64.deb ...
+Unpacking gpg-wks-server (2.2.27-3ubuntu2.4) over (2.2.27-3ubuntu2.3) ...
+Preparing to unpack .../03-gnupg-utils_2.2.27-3ubuntu2.4_amd64.deb ...
+Unpacking gnupg-utils (2.2.27-3ubuntu2.4) over (2.2.27-3ubuntu2.3) ...
+Preparing to unpack .../04-gpg-agent_2.2.27-3ubuntu2.4_amd64.deb ...
+Unpacking gpg-agent (2.2.27-3ubuntu2.4) over (2.2.27-3ubuntu2.3) ...
+Preparing to unpack .../05-gpg_2.2.27-3ubuntu2.4_amd64.deb ...
+Unpacking gpg (2.2.27-3ubuntu2.4) over (2.2.27-3ubuntu2.3) ...
+Preparing to unpack .../06-gpgconf_2.2.27-3ubuntu2.4_amd64.deb ...
+Unpacking gpgconf (2.2.27-3ubuntu2.4) over (2.2.27-3ubuntu2.3) ...
+Preparing to unpack .../07-gnupg-l10n_2.2.27-3ubuntu2.4_all.deb ...
+Unpacking gnupg-l10n (2.2.27-3ubuntu2.4) over (2.2.27-3ubuntu2.3) ...
+Preparing to unpack .../08-gnupg_2.2.27-3ubuntu2.4_all.deb ...
+Unpacking gnupg (2.2.27-3ubuntu2.4) over (2.2.27-3ubuntu2.3) ...
+Preparing to unpack .../09-gpgsm_2.2.27-3ubuntu2.4_amd64.deb ...
+Unpacking gpgsm (2.2.27-3ubuntu2.4) over (2.2.27-3ubuntu2.3) ...
+Preparing to unpack .../10-gpgv_2.2.27-3ubuntu2.4_amd64.deb ...
+Unpacking gpgv (2.2.27-3ubuntu2.4) over (2.2.27-3ubuntu2.3) ...
+Setting up gpgv (2.2.27-3ubuntu2.4) ...
+Setting up gnupg-l10n (2.2.27-3ubuntu2.4) ...
+Setting up gpgconf (2.2.27-3ubuntu2.4) ...
+Setting up gpg (2.2.27-3ubuntu2.4) ...
+Setting up gnupg-utils (2.2.27-3ubuntu2.4) ...
+Setting up gpg-agent (2.2.27-3ubuntu2.4) ...
+Setting up gpgsm (2.2.27-3ubuntu2.4) ...
+Setting up dirmngr (2.2.27-3ubuntu2.4) ...
+Setting up gpg-wks-server (2.2.27-3ubuntu2.4) ...
+Setting up gpg-wks-client (2.2.27-3ubuntu2.4) ...
+Setting up gnupg (2.2.27-3ubuntu2.4) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for install-info (6.8-4build1) ...
+Scanning processes...                                                           
+Scanning linux images...                                                        
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+ubuntu@ip-172-31-14-205:~$ sudo mkdir -m 0755 -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+ubuntu@ip-172-31-14-205:~$ echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+ubuntu@ip-172-31-14-205:~$ sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
+Hit:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy InRelease
+Hit:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates InRelease   
+Hit:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports InRelease 
+Get:4 https://download.docker.com/linux/ubuntu jammy InRelease [48.8 kB]       
+Hit:5 http://security.ubuntu.com/ubuntu jammy-security InRelease               
+Get:6 https://download.docker.com/linux/ubuntu jammy/stable amd64 Packages [53.5 kB]
+Fetched 102 kB in 1s (201 kB/s)    
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  docker-ce-rootless-extras libslirp0 pigz slirp4netns
+Suggested packages:
+  cgroupfs-mount | cgroup-lite docker-model-plugin
+The following NEW packages will be installed:
+  containerd.io docker-buildx-plugin docker-ce docker-ce-cli
+  docker-ce-rootless-extras docker-compose-plugin libslirp0 pigz slirp4netns
+0 upgraded, 9 newly installed, 0 to remove and 69 not upgraded.
+Need to get 103 MB of archives.
+After this operation, 429 MB of additional disk space will be used.
+Get:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 pigz amd64 2.6-1 [63.6 kB]
+Get:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libslirp0 amd64 4.6.1-1build1 [61.5 kB]
+Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 slirp4netns amd64 1.0.1-2 [28.2 kB]
+Get:4 https://download.docker.com/linux/ubuntu jammy/stable amd64 containerd.io amd64 1.7.27-1 [30.5 MB]
+Get:5 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce-cli amd64 5:28.3.2-1~ubuntu.22.04~jammy [16.5 MB]
+Get:6 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce amd64 5:28.3.2-1~ubuntu.22.04~jammy [19.7 MB]
+Get:7 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-buildx-plugin amd64 0.25.0-1~ubuntu.22.04~jammy [15.6 MB]
+Get:8 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce-rootless-extras amd64 5:28.3.2-1~ubuntu.22.04~jammy [6481 kB]
+Get:9 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-compose-plugin amd64 2.38.2-1~ubuntu.22.04~jammy [14.2 MB]
+Fetched 103 MB in 1s (82.4 MB/s)                    
+Selecting previously unselected package containerd.io.
+(Reading database ... 65977 files and directories currently installed.)
+Preparing to unpack .../0-containerd.io_1.7.27-1_amd64.deb ...
+Unpacking containerd.io (1.7.27-1) ...
+Selecting previously unselected package docker-ce-cli.
+Preparing to unpack .../1-docker-ce-cli_5%3a28.3.2-1~ubuntu.22.04~jammy_amd64.deb ...
+Unpacking docker-ce-cli (5:28.3.2-1~ubuntu.22.04~jammy) ...
+Selecting previously unselected package docker-ce.
+Preparing to unpack .../2-docker-ce_5%3a28.3.2-1~ubuntu.22.04~jammy_amd64.deb ...
+Unpacking docker-ce (5:28.3.2-1~ubuntu.22.04~jammy) ...
+Selecting previously unselected package pigz.
+Preparing to unpack .../3-pigz_2.6-1_amd64.deb ...
+Unpacking pigz (2.6-1) ...
+Selecting previously unselected package docker-buildx-plugin.
+Preparing to unpack .../4-docker-buildx-plugin_0.25.0-1~ubuntu.22.04~jammy_amd64.deb ...
+Unpacking docker-buildx-plugin (0.25.0-1~ubuntu.22.04~jammy) ...
+Selecting previously unselected package docker-ce-rootless-extras.
+Preparing to unpack .../5-docker-ce-rootless-extras_5%3a28.3.2-1~ubuntu.22.04~jammy_amd64.deb ...
+Unpacking docker-ce-rootless-extras (5:28.3.2-1~ubuntu.22.04~jammy) ...
+Selecting previously unselected package docker-compose-plugin.
+Preparing to unpack .../6-docker-compose-plugin_2.38.2-1~ubuntu.22.04~jammy_amd64.deb ...
+Unpacking docker-compose-plugin (2.38.2-1~ubuntu.22.04~jammy) ...
+Selecting previously unselected package libslirp0:amd64.
+Preparing to unpack .../7-libslirp0_4.6.1-1build1_amd64.deb ...
+Unpacking libslirp0:amd64 (4.6.1-1build1) ...
+Selecting previously unselected package slirp4netns.
+Preparing to unpack .../8-slirp4netns_1.0.1-2_amd64.deb ...
+Unpacking slirp4netns (1.0.1-2) ...
+Setting up docker-buildx-plugin (0.25.0-1~ubuntu.22.04~jammy) ...
+Setting up containerd.io (1.7.27-1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
+Setting up docker-compose-plugin (2.38.2-1~ubuntu.22.04~jammy) ...
+Setting up docker-ce-cli (5:28.3.2-1~ubuntu.22.04~jammy) ...
+Setting up libslirp0:amd64 (4.6.1-1build1) ...
+Setting up pigz (2.6-1) ...
+Setting up docker-ce-rootless-extras (5:28.3.2-1~ubuntu.22.04~jammy) ...
+Setting up slirp4netns (1.0.1-2) ...
+Setting up docker-ce (5:28.3.2-1~ubuntu.22.04~jammy) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.9) ...
+Scanning processes...                                                           
+Scanning linux images...                                                        
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+ubuntu@ip-172-31-14-205:~$ sudo systemctl start docker
+sudo systemctl enable docker
+Synchronizing state of docker.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable docker
+ubuntu@ip-172-31-14-205:~$ docker version
+docker info
+Client: Docker Engine - Community
+ Version:           28.3.2
+ API version:       1.51
+ Go version:        go1.24.5
+ Git commit:        578ccf6
+ Built:             Wed Jul  9 16:13:42 2025
+ OS/Arch:           linux/amd64
+ Context:           default
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.51/version": dial unix /var/run/docker.sock: connect: permission denied
+Client: Docker Engine - Community
+ Version:    28.3.2
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.25.0
+    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.38.2
+    Path:     /usr/libexec/docker/cli-plugins/docker-compose
+
+Server:
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.51/info": dial unix /var/run/docker.sock: connect: permission denied
+ubuntu@ip-172-31-14-205:~$ sudo docker version
+sudo docker info
+sudo docker run hello-world
+Client: Docker Engine - Community
+ Version:           28.3.2
+ API version:       1.51
+ Go version:        go1.24.5
+ Git commit:        578ccf6
+ Built:             Wed Jul  9 16:13:42 2025
+ OS/Arch:           linux/amd64
+ Context:           default
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          28.3.2
+  API version:      1.51 (minimum version 1.24)
+  Go version:       go1.24.5
+  Git commit:       e77ff99
+  Built:            Wed Jul  9 16:13:42 2025
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.7.27
+  GitCommit:        05044ec0a9a75232cad458027ca83437aae3f4da
+ runc:
+  Version:          1.2.5
+  GitCommit:        v1.2.5-0-g59923ef
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+Client: Docker Engine - Community
+ Version:    28.3.2
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.25.0
+    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.38.2
+    Path:     /usr/libexec/docker/cli-plugins/docker-compose
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 0
+ Server Version: 28.3.2
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Using metacopy: false
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: systemd
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: 05044ec0a9a75232cad458027ca83437aae3f4da
+ runc version: v1.2.5-0-g59923ef
+ init version: de40ad0
+ Security Options:
+  apparmor
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 6.8.0-1029-aws
+ Operating System: Ubuntu 22.04.5 LTS
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 2
+ Total Memory: 3.82GiB
+ Name: ip-172-31-14-205
+ ID: cd5eeddb-9256-453e-ad8c-431d8e5eba0b
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Experimental: false
+ Insecure Registries:
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+e6590344b1a5: Pull complete 
+Digest: sha256:ec153840d1e635ac434fab5e377081f17e0e15afab27beb3f726c3265039cfff
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+ubuntu@ip-172-31-14-205:~$ sudo usermod -aG docker $USER
+ubuntu@ip-172-31-14-205:~$ newgrp docker
+ubuntu@ip-172-31-14-205:~$ groups
+docker adm dialout cdrom floppy sudo audio dip video plugdev netdev lxd ubuntu
+ubuntu@ip-172-31-14-205:~$ docker run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+ubuntu@ip-172-31-14-205:~$ 
+
+
