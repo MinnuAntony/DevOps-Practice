@@ -37,7 +37,7 @@ Docker is designed to work with linux
 * daemon pulls the required image from Docker HUb
 * to see stopped conatiners : docker ps -a
 
-as containers have no OS they are stopped when there are no pr processes running (?)
+as containers have no OS they are stopped when there are no processes running (?)
 stops running : when docker run ubuntu (?)
 doesnt stop when running : 
  docker run -it ubuntu bash
@@ -47,3 +47,33 @@ doesnt stop when running :
  
  port forwarding?
  
+ =============================================================
+ 
+ COMMANDS :
+
+1.docker run hello-world 
+-> docker runs a container using the image named hello-world
+-> Docker Client sends request to Docker Daemon
+-> Docker Daemon pulled hello-world image from Docker Hub (if needed)
+-> A new container was created from the image
+-> The container ran a small program that printed the welcome message
+-> Output was streamed back to your terminal
+
+What is a Docker Image?
+A Docker image is like a blueprint or template.
+It is:
+-> A read-only file that contains everything needed to run a program:
+-> OS libraries
+-> Code
+-> Dependencies
+-> Configurations
+-> Used to create containers.
+Think of it like a recipe for a dish.
+
+What is a Docker Container?
+A container is a running instance of an image.
+It is:
+-> Like a virtual machine but much lighter.
+-> Isolated, but shares the same kernel as the host OS.
+-> Temporary by default (it can be configured to persist).
+-> Think of it like a cooked dish from the recipe.
