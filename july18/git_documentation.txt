@@ -98,5 +98,70 @@ Create and switch to the branch immediately
 git checkout -b <new branch-name> 
 
 
+=======================
+CONFLICT  (OCCURED WHEN I REMOTELY EDITED THE GIT, THEN PERFORMED SOME CHANGES LOCALLY AND TRIED TO PUSH)->(SOLN: FIRST PULL, THEN PUSH)
+=====================
+git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   docker.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+minnu@hplaptop-minnu:~/UST/Training/notes/july19$ git add .
+minnu@hplaptop-minnu:~/UST/Training/notes/july19$ git commit -m "add content"
+[master 7eda229] add content
+ 1 file changed, 98 insertions(+)
+minnu@hplaptop-minnu:~/UST/Training/notes/july19$ git push
+Username for 'https://github.com': Minnu Antony
+Password for 'https://Minnu%20Antony@github.com': 
+To https://github.com/MinnuAntony/DevOps-Practice.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/MinnuAntony/DevOps-Practice.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+minnu@hplaptop-minnu:~/UST/Training/notes/july19$ 
+
+
+Now Git is telling you why it rejected your push:
+
+❗ Reason:
+Your remote origin/master has some commits you don’t have locally.
+That’s why Git says:
+
+"Updates were rejected because the remote contains work that you do not have locally."
+
+This usually happens if:
+
+Someone else pushed changes directly to GitHub.
+
+You created the repo with a README.md or .gitignore on GitHub, but never pulled it to your machine.
+
+Or you pushed from another machine before.
+
+🔧 Solution:
+You need to pull first, then push again.
+
+✅ Run these commands:
+bash
+Copy
+Edit
+git pull origin master --rebase
+This will pull the changes and apply your commits on top of the latest remote commits.
+
+If no conflicts:
+
+bash
+Copy
+Edit
+git push
+🚩 Why --rebase?
+It avoids unnecessary merge commits and keeps your history clean.
 
 
