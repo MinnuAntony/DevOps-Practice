@@ -94,6 +94,9 @@ git branch <branch-name>
 Switch between branches:
 git checkout <branch-name>
 
+Create and switch to the branch immediately
+git checkout -b <new branch-name> 
+
 
 
 
