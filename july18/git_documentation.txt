@@ -165,3 +165,11 @@ git push
 It avoids unnecessary merge commits and keeps your history clean.
 
 
+
+
+
+======================
+CONFLICT IN GIT
+=====================
+
+When two people simulatneouly work on the same file

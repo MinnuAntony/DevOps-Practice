@@ -175,3 +175,10 @@ This image comes with Nginx pre-installed and configured to serve a default page
 ➡️ Exposed its internal port 80 (where Nginx listens) to your VM’s port 8080.
 
 
+DOCKER VOLUMES:
+
+Container will crash - at some cases(find?)
+so they are ephemeral
+
+so we should assume that a conatiner might crash easily-hence design it in such a way - say , stateless
+
