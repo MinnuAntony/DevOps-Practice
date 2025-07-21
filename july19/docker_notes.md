@@ -52,3 +52,33 @@ ref: https://github.com/sidpalas/devops-directive-docker-course
 Hello from the container!
 
 root@4a93beffc351:/# `exit`
+
+----------------------------------------------------------------------------------------------------------
+## creating a simple Python app, containerizing it with Docker, saving the image as a .tar file, and copying it from EC2 to  local machine
+
+$ `mkdir expense-tracker-app`
+
+$ `cd expense-tracker-app`
+
+$ `vim app.py`
+
+$ `vim requirements.txt`
+
+$ `vim Dockerfile`
+
+$ `docker build -t expense-tracker-app .`
+
+$ `docker run -p 5000:5000 expense-tracker-app`
+
+$ `docker save -o expense-tracker-app.tar expense-tracker-app`
+
+$ `scp -i /home/minnu/Downloads/Minnu.pem ubuntu@3.22.61.207:/home/ubuntu/expense-tracker-app/expense-tracker-app.tar /home/minnu/UST/Training/`
+
+- To remove the container: 
+$ `docker rm <conatinerID>`
+
+
+
+
+
+
