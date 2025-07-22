@@ -233,3 +233,14 @@ Press CTRL+C to quit
 117.211.170.154 - - [21/Jul/2025 06:18:19] "GET / HTTP/1.1" 200 -
 117.211.170.154 - - [21/Jul/2025 06:18:20] "GET /static/style.css HTTP/1.1" 304 -
 ^C
+
+----------------------------------------------------------------
+ $ ubuntu@ip-172-31-11-212:~$ docker run -d --name test-nginx nginx
+
+ $ ubuntu@ip-172-31-11-212:~$ docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+6f1af67ca4c6   nginx     "/docker-entrypoint.…"   12 seconds ago   Up 11 seconds   80/tcp    test-nginx
+ $ ubuntu@ip-172-31-11-212:~$ docker stop test-nginx
+test-nginx
+ $ ubuntu@ip-172-31-11-212:~$ 
+
