@@ -244,3 +244,16 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS       
 test-nginx
  $ ubuntu@ip-172-31-11-212:~$ 
 
+
+=====rough notes======
+
+multistage build:
+
+performance of container depends on image
+-like if we reduce the no. lines - no. of layers are get reduced
+
+or we use MULTISTAGE BUILD
+JDK includes .java (helpful for debugging)-generally used by developers
+JRE doesnt contain .java- (usd in pdn env)
+
+
