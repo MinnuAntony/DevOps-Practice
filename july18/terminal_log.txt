@@ -1,6 +1,7 @@
 Script started on 2025-07-18 23:15:29+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="211" LINES="49"]
 [?2004h]0;minnu@hplaptop-minnu: ~/UST/Training/notes[01;32mminnu@hplaptop-minnu[00m:[01;34m~/UST/Training/notes[00m$ gti[K[Kit status
-[?2004lOn branch master
+[?2004l
+On branch master
 Your branch is up to date with 'origin/master'.
 
 Untracked files:
@@ -9,10 +10,28 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 [?2004h]0;minnu@hplaptop-minnu: ~/UST/Training/notes[01;32mminnu@hplaptop-minnu[00m:[01;34m~/UST/Training/notes[00m$ [7mnano .gitignore[27m
-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnano .gitignore
-[A
-[?2004l[?2004h[?1049h[22;0;0t[1;49r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[47;100H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                                                                                         .gitignore                                                                                                  [1;210H(B[m[48d(B[0;7m^G(B[m Help[48;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut[48;69H(B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[48;120H(B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous     (B[0;7m^B(B[m Back[48;188H(B[0;7m^◂(B[m Prev Word[49d(B[0;7m^X(B[m Exit[49;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste[49;69H(B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[49;120H(B[0;7mM-6(B[m Copy[49;137H(B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next[49;171H(B[0;7m^F(B[m Forward[188G(B[0;7m^▸(B[m Next Word[2d[?12l[?25h[?25l[1;115H(B[0;7m*[210G(B[m[?12l[?25h[2dt[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25h[38;5;208m     [39m(B[m[?25l[?12l[?25hter[K[?25l[?12l[?25hm[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hl[?25l[?12l[?25h [?25l[?12l[?25ha[?25l[?12l[?25hl[?25l[?12l[?25h_[?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25hg[?25l[?12l[?25h.[?25l[?12l[?25ht[?25l[?12l[?25hx[?25l[47d[K[?12l[?25h[2;16Ht[?25l[3d[?12l[?25h[?25l[?12l[?25ho[?25l[?12l[?25h[K[?25l[?12l[?25hO[?25l[?12l[?25h[K[?25l[?12l[?25h6[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[47;99H(B[0;7m[ Writing... ](B[m[1;115H(B[0;7m [210G(B[m[47;98H(B[0;7m[ Wrote 2 lines ](B[m[?12l[?25h[3d[?25l[48;18H[28X[48;52H (B[0;7mM-D(B[m DOS Format            [86G           [103G  (B[0;7mM-A(B[m Append[42X[48;157H(B[0;7mM-B(B[m Backup File[K[49;2H(B[0;7mC(B[m Cancel[49;18H[27X[49;52H (B[0;7mM-M(B[m Mac Format            [86G[19X[49;105H(B[0;7mM-P(B[m Prepend            [49;137H[20X[49;157H(B[0;7m^T(B[m Browse[K[47d(B[0;7mFile Name to Write: .gitignore                                                                                                                                                                                     [47;31H(B[m[?12l[?25h[?25l[?12l[?25h[?25l[47;98H[1K (B[0;7m[ Writing... ](B[m[K[1;210H[47;98H(B[0;7m[ Wrote 2 lines ](B[m[48;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut           (B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo         (B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous     (B[0;7m^B(B[m Back[48;188H(B[0;7m^◂(B[m Prev Word[49;2H(B[0;7mX(B[m Exit  [49;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste         (B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo         (B[0;7mM-6(B[m Copy[49;137H(B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next         (B[0;7m^F(B[m Forward[188G(B[0;7m^▸(B[m Next Word[?12l[?25h[3d[?25l[1;115H(B[0;7m*[210G(B[m[4d[?12l[?25h[?25l[48;18H[28X[48;52H (B[0;7mM-D(B[m DOS Format            [86G           [103G  (B[0;7mM-A(B[m Append[42X[48;157H(B[0;7mM-B(B[m Backup File[K[49;2H(B[0;7mC(B[m Cancel[49;18H[27X[49;52H (B[0;7mM-M(B[m Mac Format            [86G[19X[49;105H(B[0;7mM-P(B[m Prepend            [49;137H[20X[49;157H(B[0;7m^T(B[m Browse[K[47d(B[0;7mFile Name to Write: .gitignore                                                                                                                                                                                     [47;31H(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[47;98H[1K (B[0;7m[ Writing... ](B[m[K[1;115H(B[0;7m [210G(B[m[47;98H(B[0;7m[ Wrote 3 lines ](B[m[48;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut           (B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo         (B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous     (B[0;7m^B(B[m Back[48;188H(B[0;7m^◂(B[m Prev Word[49;2H(B[0;7mX(B[m Exit  [49;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste         (B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo         (B[0;7mM-6(B[m Copy[49;137H(B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next         (B[0;7m^F(B[m Forward[188G(B[0;7m^▸(B[m Next Word[?12l[?25h[4d[?25l[47d[J[49d[?12l[?25h[49;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;minnu@hplaptop-minnu: ~/UST/Training/notes[01;32mminnu@hplaptop-minnu[00m:[01;34m~/UST/Training/notes[00m$ nano .gitignore[5Pgit status
-[?2004lOn branch master
+
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnano .gitignore
+
+[A
+[?2004l
+[?2004h[?1049h[22;0;0t[1;49r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[47;100H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                                                                                         .gitignore                                                                                                  [1;210H(B[m
+[48d(B[0;7m^G(B[m Help[48;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut[48;69H(B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[48;120H(B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous     (B[0;7m^B(B[m Back[48;188H(B[0;7m^◂(B[m Prev Word
+[49d(B[0;7m^X(B[m Exit[49;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste[49;69H(B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[49;120H(B[0;7mM-6(B[m Copy[49;137H(B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next[49;171H(B[0;7m^F(B[m Forward[188G(B[0;7m^▸(B[m Next Word
+[2d[?12l[?25h[?25l[1;115H(B[0;7m*[210G(B[m[?12l[?25h
+[2dt[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25h[38;5;208m     [39m(B[m[?25l[?12l[?25h
+ter[K[?25l[?12l[?25hm[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hl[?25l[?12l[?25h [?25l[?12l[?25ha[?25l[?12l[?25hl[?25l[?12l[?25h_[?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25hg[?25l[?12l[?25h.[?25l[?12l[?25ht[?25l[?12l[?25hx[?25l
+[47d[K[?12l[?25h[2;16Ht[?25l
+[3d[?12l[?25h[?25l[?12l[?25ho[?25l[?12l[?25h[K[?25l[?12l[?25hO[?25l[?12l[?25h[K[?25l[?12l[?25h6[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[47;99H(B[0;7m[ Writing... ](B[m[1;115H(B[0;7m [210G(B[m[47;98H(B[0;7m[ Wrote 2 lines ](B[m[?12l[?25h
+[3d[?25l[48;18H[28X[48;52H (B[0;7mM-D(B[m DOS Format            [86G           [103G  (B[0;7mM-A(B[m Append[42X[48;157H(B[0;7mM-B(B[m Backup File[K[49;2H(B[0;7mC(B[m Cancel[49;18H[27X[49;52H (B[0;7mM-M(B[m Mac Format            [86G[19X[49;105H(B[0;7mM-P(B[m Prepend            [49;137H[20X[49;157H(B[0;7m^T(B[m Browse[K
+[47d(B[0;7mFile Name to Write: .gitignore                                                                                                                                                                                     [47;31H(B[m[?12l[?25h[?25l[?12l[?25h[?25l[47;98H[1K (B[0;7m[ Writing... ](B[m[K[1;210H[47;98H(B[0;7m[ Wrote 2 lines ](B[m[48;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut           (B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo         (B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous     (B[0;7m^B(B[m Back[48;188H(B[0;7m^◂(B[m Prev Word[49;2H(B[0;7mX(B[m Exit  [49;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste         (B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo         (B[0;7mM-6(B[m Copy[49;137H(B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next         (B[0;7m^F(B[m Forward[188G(B[0;7m^▸(B[m Next Word[?12l[?25h
+[3d[?25l[1;115H(B[0;7m*[210G(B[m
+[4d[?12l[?25h[?25l[48;18H[28X[48;52H (B[0;7mM-D(B[m DOS Format            [86G           [103G  (B[0;7mM-A(B[m Append[42X[48;157H(B[0;7mM-B(B[m Backup File[K[49;2H(B[0;7mC(B[m Cancel[49;18H[27X[49;52H (B[0;7mM-M(B[m Mac Format            [86G[19X[49;105H(B[0;7mM-P(B[m Prepend            [49;137H[20X[49;157H(B[0;7m^T(B[m Browse[K
+[47d(B[0;7mFile Name to Write: .gitignore                                                                                                                                                                                     [47;31H(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[47;98H[1K (B[0;7m[ Writing... ](B[m[K[1;115H(B[0;7m [210G(B[m[47;98H(B[0;7m[ Wrote 3 lines ](B[m[48;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut           (B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo         (B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous     (B[0;7m^B(B[m Back[48;188H(B[0;7m^◂(B[m Prev Word[49;2H(B[0;7mX(B[m Exit  [49;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste         (B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo         (B[0;7mM-6(B[m Copy[49;137H(B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next         (B[0;7m^F(B[m Forward[188G(B[0;7m^▸(B[m Next Word[?12l[?25h
+[4d[?25l[47d[J[49d[?12l[?25h[49;1H[?1049l[23;0;0t
+[?1l>[?2004l[?2004h]0;minnu@hplaptop-minnu: ~/UST/Training/notes[01;32mminnu@hplaptop-minnu[00m:[01;34m~/UST/Training/notes[00m$ nano .gitignore[5Pgit status
+[?2004l
+On branch master
 Your branch is up to date with 'origin/master'.
 
 Untracked files:
@@ -22,14 +41,19 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 [?2004h]0;minnu@hplaptop-minnu: ~/UST/Training/notes[01;32mminnu@hplaptop-minnu[00m:[01;34m~/UST/Training/notes[00m$ touch july17.txt[K[K[K[K[K[K[K[K[K[Kgit_documentation.txt
-[?2004l[?2004h]0;minnu@hplaptop-minnu: ~/UST/Training/notes[01;32mminnu@hplaptop-minnu[00m:[01;34m~/UST/Training/notes[00m$ ls
-[?2004lgit_bash_history.txt  git_documentation.txt  july18.txt  my_terminal_log.txt
+[?2004l
+[?2004h]0;minnu@hplaptop-minnu: ~/UST/Training/notes[01;32mminnu@hplaptop-minnu[00m:[01;34m~/UST/Training/notes[00m$ ls
+[?2004l
+git_bash_history.txt  git_documentation.txt  july18.txt  my_terminal_log.txt
 [?2004h]0;minnu@hplaptop-minnu: ~/UST/Training/notes[01;32mminnu@hplaptop-minnu[00m:[01;34m~/UST/Training/notes[00m$ vim git [K_
 git_bash_history.txt   git_documentation.txt  
 ]0;minnu@hplaptop-minnu: ~/UST/Training/notes[01;32mminnu@hplaptop-minnu[00m:[01;34m~/UST/Training/notes[00m$ vim git_documentation.txt [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgedit git_documentation.txt 
-[?2004l[?2004h]0;minnu@hplaptop-minnu: ~/UST/Training/notes[01;32mminnu@hplaptop-minnu[00m:[01;34m~/UST/Training/notes[00m$ git add.[K .
-[?2004l[?2004h]0;minnu@hplaptop-minnu: ~/UST/Training/notes[01;32mminnu@hplaptop-minnu[00m:[01;34m~/UST/Training/notes[00m$ git commit -m "add lines"
-[?2004l[master 36d881e] add lines
+[?2004l
+[?2004h]0;minnu@hplaptop-minnu: ~/UST/Training/notes[01;32mminnu@hplaptop-minnu[00m:[01;34m~/UST/Training/notes[00m$ git add.[K .
+[?2004l
+[?2004h]0;minnu@hplaptop-minnu: ~/UST/Training/notes[01;32mminnu@hplaptop-minnu[00m:[01;34m~/UST/Training/notes[00m$ git commit -m "add lines"
+[?2004l
+[master 36d881e] add lines
  3 files changed, 21 insertions(+)
  create mode 100644 .gitignore
  create mode 100644 git_documentation.txt
@@ -37,19 +61,1278 @@ git_bash_history.txt   git_documentation.txt
 [?2004h]0;minnu@hplaptop-minnu: ~/UST/Training/notes[01;32mminnu@hplaptop-minnu[00m:[01;34m~/UST/Training/notes[00m$ git push origin 
 HEAD            master          origin/master   
 ]0;minnu@hplaptop-minnu: ~/UST/Training/notes[01;32mminnu@hplaptop-minnu[00m:[01;34m~/UST/Training/notes[00m$ git push origin master 
-[?2004lUsername for 'https://github.com': Minnu Antony
+[?2004l
+Username for 'https://github.com': Minnu Antony
 Password for 'https://Minnu%20Antony@github.com': 
 Enumerating objects: 6, done.
-Counting objects:  16% (1/6)Counting objects:  33% (2/6)Counting objects:  50% (3/6)Counting objects:  66% (4/6)Counting objects:  83% (5/6)Counting objects: 100% (6/6)Counting objects: 100% (6/6), done.
+Counting objects:  16% (1/6)
+Counting objects:  33% (2/6)
+Counting objects:  50% (3/6)
+Counting objects:  66% (4/6)
+Counting objects:  83% (5/6)
+Counting objects: 100% (6/6)
+Counting objects: 100% (6/6), done.
 Delta compression using up to 8 threads
-Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
-Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 1.64 KiB | 1.64 MiB/s, done.
+Compressing objects:  25% (1/4)
+Compressing objects:  50% (2/4)
+Compressing objects:  75% (3/4)
+Compressing objects: 100% (4/4)
+Compressing objects: 100% (4/4), done.
+Writing objects:  20% (1/5)
+Writing objects:  40% (2/5)
+Writing objects:  60% (3/5)
+Writing objects:  80% (4/5)
+Writing objects: 100% (5/5)
+Writing objects: 100% (5/5), 1.64 KiB | 1.64 MiB/s, done.
 Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/MinnuAntony/DevOps-Practice.git
    35d6bf1..36d881e  master -> master
 [?2004h]0;minnu@hplaptop-minnu: ~/UST/Training/notes[01;32mminnu@hplaptop-minnu[00m:[01;34m~/UST/Training/notes[00m$ ls
-[?2004lgit_bash_history.txt  git_documentation.txt  july18.txt  my_terminal_log.txt
+[?2004l
+git_bash_history.txt  git_documentation.txt  july18.txt  my_terminal_log.txt
 [?2004h]0;minnu@hplaptop-minnu: ~/UST/Training/notes[01;32mminnu@hplaptop-minnu[00m:[01;34m~/UST/Training/notes[00m$ exit
-[?2004lexit
+[?2004l
+exit
 
 Script done on 2025-07-18 23:21:57+05:30 [COMMAND_EXIT_CODE="0"]
+
+
+
+docker final- netwoking and volumes july 23rd
+
+minnu@hplaptop-minnu:~/Downloads$ ssh -i Minnu.pem ubuntu@3.144.100.75
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 6.8.0-1029-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Jul 23 05:42:01 UTC 2025
+
+  System load:  0.04              Processes:             125
+  Usage of /:   34.4% of 7.57GB   Users logged in:       1
+  Memory usage: 8%                IPv4 address for eth0: 172.31.9.158
+  Swap usage:   0%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+75 updates can be applied immediately.
+62 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+New release '24.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Wed Jul 23 05:36:58 2025 from 59.88.71.116
+ubuntu@ip-172-31-9-158:~$ 
+ubuntu@ip-172-31-9-158:~$ docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS              PORTS     NAMES
+807ad56b0de5   nginx     "/docker-entrypoint.…"   About a minute ago   Up About a minute   80/tcp    logout
+3a501f40e29e   nginx     "/docker-entrypoint.…"   2 minutes ago        Up 2 minutes        80/tcp    login
+ubuntu@ip-172-31-9-158:~$ docker inspect logout
+[
+    {
+        "Id": "807ad56b0de5a0e616e13beb555880d3802b25b7773925bfcc038efaadd899d9",
+        "Created": "2025-07-23T05:40:49.853518204Z",
+        "Path": "/docker-entrypoint.sh",
+        "Args": [
+            "nginx",
+            "-g",
+            "daemon off;"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 3647,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2025-07-23T05:40:49.896373044Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:2cd1d97f893f70cee86a38b7160c30e5750f3ed6ad86c598884ca9c6a563a501",
+        "ResolvConfPath": "/var/lib/docker/containers/807ad56b0de5a0e616e13beb555880d3802b25b7773925bfcc038efaadd899d9/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/807ad56b0de5a0e616e13beb555880d3802b25b7773925bfcc038efaadd899d9/hostname",
+        "HostsPath": "/var/lib/docker/containers/807ad56b0de5a0e616e13beb555880d3802b25b7773925bfcc038efaadd899d9/hosts",
+        "LogPath": "/var/lib/docker/containers/807ad56b0de5a0e616e13beb555880d3802b25b7773925bfcc038efaadd899d9/807ad56b0de5a0e616e13beb555880d3802b25b7773925bfcc038efaadd899d9-json.log",
+        "Name": "/logout",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                49,
+                211
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "ID": "807ad56b0de5a0e616e13beb555880d3802b25b7773925bfcc038efaadd899d9",
+                "LowerDir": "/var/lib/docker/overlay2/81736d7b7619940dd6fcfb146b61782d6a1f61f2e6900e44bc205a0827f443e7-init/diff:/var/lib/docker/overlay2/665e16245562180671c28db635ce396431abdc31cc5cad2bc6878a11ebf4124e/diff:/var/lib/docker/overlay2/c38579612b5c5304130cd37827f0f397d76f101e226a146592a8e7d5e8e0c5d6/diff:/var/lib/docker/overlay2/372eea158df61ddb8e667925fea12ae4fdaddc70de9ec86bf8989ad607c114b6/diff:/var/lib/docker/overlay2/a55ef2f5ed58457ded28223c07c3c297dfaedce177ad71c0b372c447c5b67785/diff:/var/lib/docker/overlay2/61ecf447dc80ab285cd94161b04c5cfa330bc71009bbc6e2105768926ea53418/diff:/var/lib/docker/overlay2/b619e2b36f22349a2395b178b74cbdb9172103e19cead8427ed72c6807d4721b/diff:/var/lib/docker/overlay2/deb3f23ab58ff3a90e6e0bd236a7c6270e577a6e880c7d294cdd9d6a7addc1f7/diff",
+                "MergedDir": "/var/lib/docker/overlay2/81736d7b7619940dd6fcfb146b61782d6a1f61f2e6900e44bc205a0827f443e7/merged",
+                "UpperDir": "/var/lib/docker/overlay2/81736d7b7619940dd6fcfb146b61782d6a1f61f2e6900e44bc205a0827f443e7/diff",
+                "WorkDir": "/var/lib/docker/overlay2/81736d7b7619940dd6fcfb146b61782d6a1f61f2e6900e44bc205a0827f443e7/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "807ad56b0de5",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.29.0",
+                "NJS_VERSION=0.9.0",
+                "NJS_RELEASE=1~bookworm",
+                "PKG_RELEASE=1~bookworm",
+                "DYNPKG_RELEASE=1~bookworm"
+            ],
+            "Cmd": [
+                "nginx",
+                "-g",
+                "daemon off;"
+            ],
+            "Image": "nginx",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            },
+            "StopSignal": "SIGQUIT"
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "c0db8cb599a22e47ea6254c99c92b091b948aa2f6693aac5779eb050b0f7dc02",
+            "SandboxKey": "/var/run/docker/netns/c0db8cb599a2",
+            "Ports": {
+                "80/tcp": null
+            },
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "e2eff2b45c150555b983aefb984b24b009fede9422d9602b1d3bebb353e07fa1",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.3",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "de:24:56:eb:b3:18",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "de:24:56:eb:b3:18",
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "bc8c09a3645590bccb4d7c1312ca3df59bd05bb3a8ec11dcf7528f1821f1bc36",
+                    "EndpointID": "e2eff2b45c150555b983aefb984b24b009fede9422d9602b1d3bebb353e07fa1",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        }
+    }
+]
+ubuntu@ip-172-31-9-158:~$ 
+ubuntu@ip-172-31-9-158:~$ 
+ubuntu@ip-172-31-9-158:~$ docker exec -it logout bash
+root@807ad56b0de5:/# ping 172.17.0.2
+bash: ping: command not found
+root@807ad56b0de5:/# apt update ; apt-get install iputils-ping -y
+Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8793 kB]
+Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [756 B]
+Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [272 kB]
+Fetched 9320 kB in 1s (6761 kB/s)                    
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+All packages are up to date.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libcap2-bin libpam-cap
+The following NEW packages will be installed:
+  iputils-ping libcap2-bin libpam-cap
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 96.6 kB of archives.
+After this operation, 312 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bookworm/main amd64 libcap2-bin amd64 1:2.66-4+deb12u1 [34.8 kB]
+Get:2 http://deb.debian.org/debian bookworm/main amd64 iputils-ping amd64 3:20221126-1+deb12u1 [47.2 kB]
+Get:3 http://deb.debian.org/debian bookworm/main amd64 libpam-cap amd64 1:2.66-4+deb12u1 [14.7 kB]
+Fetched 96.6 kB in 0s (4671 kB/s)      
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libcap2-bin.
+(Reading database ... 7582 files and directories currently installed.)
+Preparing to unpack .../libcap2-bin_1%3a2.66-4+deb12u1_amd64.deb ...
+Unpacking libcap2-bin (1:2.66-4+deb12u1) ...
+Selecting previously unselected package iputils-ping.
+Preparing to unpack .../iputils-ping_3%3a20221126-1+deb12u1_amd64.deb ...
+Unpacking iputils-ping (3:20221126-1+deb12u1) ...
+Selecting previously unselected package libpam-cap:amd64.
+Preparing to unpack .../libpam-cap_1%3a2.66-4+deb12u1_amd64.deb ...
+Unpacking libpam-cap:amd64 (1:2.66-4+deb12u1) ...
+Setting up libcap2-bin (1:2.66-4+deb12u1) ...
+Setting up libpam-cap:amd64 (1:2.66-4+deb12u1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.36.0 /usr/local/share/perl/5.36.0 /usr/lib/x86_64-linux-gnu/perl5/5.36 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.36 /usr/share/perl/5.36 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up iputils-ping (3:20221126-1+deb12u1) ...
+root@807ad56b0de5:/# ping 172.17.0.2
+PING 172.17.0.2 (172.17.0.2) 56(84) bytes of data.
+64 bytes from 172.17.0.2: icmp_seq=1 ttl=64 time=0.025 ms
+64 bytes from 172.17.0.2: icmp_seq=2 ttl=64 time=0.044 ms
+64 bytes from 172.17.0.2: icmp_seq=3 ttl=64 time=0.044 ms
+64 bytes from 172.17.0.2: icmp_seq=4 ttl=64 time=0.038 ms
+64 bytes from 172.17.0.2: icmp_seq=5 ttl=64 time=0.039 ms
+64 bytes from 172.17.0.2: icmp_seq=6 ttl=64 time=0.039 ms
+64 bytes from 172.17.0.2: icmp_seq=7 ttl=64 time=0.041 ms
+64 bytes from 172.17.0.2: icmp_seq=8 ttl=64 time=0.041 ms
+64 bytes from 172.17.0.2: icmp_seq=9 ttl=64 time=0.037 ms
+64 bytes from 172.17.0.2: icmp_seq=10 ttl=64 time=0.038 ms
+64 bytes from 172.17.0.2: icmp_seq=11 ttl=64 time=0.038 ms
+64 bytes from 172.17.0.2: icmp_seq=12 ttl=64 time=0.038 ms
+64 bytes from 172.17.0.2: icmp_seq=13 ttl=64 time=0.043 ms
+64 bytes from 172.17.0.2: icmp_seq=14 ttl=64 time=0.038 ms
+64 bytes from 172.17.0.2: icmp_seq=15 ttl=64 time=0.040 ms
+^C
+--- 172.17.0.2 ping statistics ---
+15 packets transmitted, 15 received, 0% packet loss, time 14340ms
+rtt min/avg/max/mdev = 0.025/0.038/0.044/0.004 ms
+root@807ad56b0de5:/# docker network ls
+bash: docker: command not found
+root@807ad56b0de5:/# exit
+exit
+ubuntu@ip-172-31-9-158:~$ dcoker network ls
+Command 'dcoker' not found, did you mean:
+  command 'docker' from snap docker (28.1.1+1)
+  command 'docker' from deb podman-docker (3.4.4+ds1-1ubuntu1.22.04.3)
+  command 'docker' from deb docker.io (26.1.3-0ubuntu1~22.04.1)
+See 'snap info <snapname>' for additional versions.
+ubuntu@ip-172-31-9-158:~$ docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+bc8c09a36455   bridge    bridge    local
+ac7d8c4854a0   host      host      local
+74111fdb039a   none      null      local
+ubuntu@ip-172-31-9-158:~$ docker network ls -a
+unknown shorthand flag: 'a' in -a
+
+Usage:  docker network ls [OPTIONS]
+
+Run 'docker network ls --help' for more information
+ubuntu@ip-172-31-9-158:~$ docker ls
+docker: unknown command: docker ls
+
+Run 'docker --help' for more information
+ubuntu@ip-172-31-9-158:~$ docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS     NAMES
+807ad56b0de5   nginx     "/docker-entrypoint.…"   6 minutes ago   Up 6 minutes   80/tcp    logout
+3a501f40e29e   nginx     "/docker-entrypoint.…"   8 minutes ago   Up 8 minutes   80/tcp    login
+ubuntu@ip-172-31-9-158:~$ 
+ubuntu@ip-172-31-9-158:~$ 
+ubuntu@ip-172-31-9-158:~$ 
+ubuntu@ip-172-31-9-158:~$ docker network create mycust-net
+295f711258a8a3d8f00250cab6d3fae057ac6d8611f1ca8d8671e80bd91e7053
+ubuntu@ip-172-31-9-158:~$ docker network ls
+NETWORK ID     NAME         DRIVER    SCOPE
+bc8c09a36455   bridge       bridge    local
+ac7d8c4854a0   host         host      local
+295f711258a8   mycust-net   bridge    local
+74111fdb039a   none         null      local
+ubuntu@ip-172-31-9-158:~$ docker run -d --name secure_cust --network mycust-net nginx:latest 
+f6f3ef4a468f7f6b2628e96cb5474d3a4ffcae305c978ac7caafaf5abc8f75f7
+ubuntu@ip-172-31-9-158:~$ docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS     NAMES
+f6f3ef4a468f   nginx:latest   "/docker-entrypoint.…"   4 seconds ago    Up 3 seconds    80/tcp    secure_cust
+807ad56b0de5   nginx          "/docker-entrypoint.…"   9 minutes ago    Up 9 minutes    80/tcp    logout
+3a501f40e29e   nginx          "/docker-entrypoint.…"   10 minutes ago   Up 10 minutes   80/tcp    login
+ubuntu@ip-172-31-9-158:~$ docker inspect secure-cust
+[]
+Error: No such object: secure-cust
+ubuntu@ip-172-31-9-158:~$ docker inspect secure_cust
+[
+    {
+        "Id": "f6f3ef4a468f7f6b2628e96cb5474d3a4ffcae305c978ac7caafaf5abc8f75f7",
+        "Created": "2025-07-23T05:50:21.87757099Z",
+        "Path": "/docker-entrypoint.sh",
+        "Args": [
+            "nginx",
+            "-g",
+            "daemon off;"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 4607,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2025-07-23T05:50:21.964829435Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:2cd1d97f893f70cee86a38b7160c30e5750f3ed6ad86c598884ca9c6a563a501",
+        "ResolvConfPath": "/var/lib/docker/containers/f6f3ef4a468f7f6b2628e96cb5474d3a4ffcae305c978ac7caafaf5abc8f75f7/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/f6f3ef4a468f7f6b2628e96cb5474d3a4ffcae305c978ac7caafaf5abc8f75f7/hostname",
+        "HostsPath": "/var/lib/docker/containers/f6f3ef4a468f7f6b2628e96cb5474d3a4ffcae305c978ac7caafaf5abc8f75f7/hosts",
+        "LogPath": "/var/lib/docker/containers/f6f3ef4a468f7f6b2628e96cb5474d3a4ffcae305c978ac7caafaf5abc8f75f7/f6f3ef4a468f7f6b2628e96cb5474d3a4ffcae305c978ac7caafaf5abc8f75f7-json.log",
+        "Name": "/secure_cust",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "mycust-net",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                47,
+                211
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "ID": "f6f3ef4a468f7f6b2628e96cb5474d3a4ffcae305c978ac7caafaf5abc8f75f7",
+                "LowerDir": "/var/lib/docker/overlay2/7c1a5b22cd597e53e416cfa05e30017a7950624c4fdd6b111bedd439bd891703-init/diff:/var/lib/docker/overlay2/665e16245562180671c28db635ce396431abdc31cc5cad2bc6878a11ebf4124e/diff:/var/lib/docker/overlay2/c38579612b5c5304130cd37827f0f397d76f101e226a146592a8e7d5e8e0c5d6/diff:/var/lib/docker/overlay2/372eea158df61ddb8e667925fea12ae4fdaddc70de9ec86bf8989ad607c114b6/diff:/var/lib/docker/overlay2/a55ef2f5ed58457ded28223c07c3c297dfaedce177ad71c0b372c447c5b67785/diff:/var/lib/docker/overlay2/61ecf447dc80ab285cd94161b04c5cfa330bc71009bbc6e2105768926ea53418/diff:/var/lib/docker/overlay2/b619e2b36f22349a2395b178b74cbdb9172103e19cead8427ed72c6807d4721b/diff:/var/lib/docker/overlay2/deb3f23ab58ff3a90e6e0bd236a7c6270e577a6e880c7d294cdd9d6a7addc1f7/diff",
+                "MergedDir": "/var/lib/docker/overlay2/7c1a5b22cd597e53e416cfa05e30017a7950624c4fdd6b111bedd439bd891703/merged",
+                "UpperDir": "/var/lib/docker/overlay2/7c1a5b22cd597e53e416cfa05e30017a7950624c4fdd6b111bedd439bd891703/diff",
+                "WorkDir": "/var/lib/docker/overlay2/7c1a5b22cd597e53e416cfa05e30017a7950624c4fdd6b111bedd439bd891703/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "f6f3ef4a468f",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.29.0",
+                "NJS_VERSION=0.9.0",
+                "NJS_RELEASE=1~bookworm",
+                "PKG_RELEASE=1~bookworm",
+                "DYNPKG_RELEASE=1~bookworm"
+            ],
+            "Cmd": [
+                "nginx",
+                "-g",
+                "daemon off;"
+            ],
+            "Image": "nginx:latest",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            },
+            "StopSignal": "SIGQUIT"
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "2a25d6e2bacbffbeb819991b7e4c91d5608cf0a4817f927124133b6a47b0583d",
+            "SandboxKey": "/var/run/docker/netns/2a25d6e2bacb",
+            "Ports": {
+                "80/tcp": null
+            },
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "mycust-net": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "36:20:3d:ab:e3:7b",
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "295f711258a8a3d8f00250cab6d3fae057ac6d8611f1ca8d8671e80bd91e7053",
+                    "EndpointID": "8df86b09c6b5b72f384817dd0de55dd02ab8f58d3440d40314292dcc9422897c",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "secure_cust",
+                        "f6f3ef4a468f"
+                    ]
+                }
+            }
+        }
+    }
+]
+ubuntu@ip-172-31-9-158:~$ docker exec -it  secure_cust bash
+root@f6f3ef4a468f:/# ping 172.17.0.2
+bash: ping: command not found
+root@f6f3ef4a468f:/# apt-update 
+bash: apt-update: command not found
+root@f6f3ef4a468f:/# apt update
+Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8793 kB]
+Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [756 B]
+Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [272 kB]
+Fetched 9320 kB in 1s (6463 kB/s)                        
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+All packages are up to date.
+root@f6f3ef4a468f:/# apt-get install iputils-ping -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libcap2-bin libpam-cap
+The following NEW packages will be installed:
+  iputils-ping libcap2-bin libpam-cap
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 96.6 kB of archives.
+After this operation, 312 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bookworm/main amd64 libcap2-bin amd64 1:2.66-4+deb12u1 [34.8 kB]
+Get:2 http://deb.debian.org/debian bookworm/main amd64 iputils-ping amd64 3:20221126-1+deb12u1 [47.2 kB]
+Get:3 http://deb.debian.org/debian bookworm/main amd64 libpam-cap amd64 1:2.66-4+deb12u1 [14.7 kB]
+Fetched 96.6 kB in 0s (1976 kB/s)    
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libcap2-bin.
+(Reading database ... 7582 files and directories currently installed.)
+Preparing to unpack .../libcap2-bin_1%3a2.66-4+deb12u1_amd64.deb ...
+Unpacking libcap2-bin (1:2.66-4+deb12u1) ...
+Selecting previously unselected package iputils-ping.
+Preparing to unpack .../iputils-ping_3%3a20221126-1+deb12u1_amd64.deb ...
+Unpacking iputils-ping (3:20221126-1+deb12u1) ...
+Selecting previously unselected package libpam-cap:amd64.
+Preparing to unpack .../libpam-cap_1%3a2.66-4+deb12u1_amd64.deb ...
+Unpacking libpam-cap:amd64 (1:2.66-4+deb12u1) ...
+Setting up libcap2-bin (1:2.66-4+deb12u1) ...
+Setting up libpam-cap:amd64 (1:2.66-4+deb12u1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.36.0 /usr/local/share/perl/5.36.0 /usr/lib/x86_64-linux-gnu/perl5/5.36 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.36 /usr/share/perl/5.36 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up iputils-ping (3:20221126-1+deb12u1) ...
+root@f6f3ef4a468f:/# ping 172.17.0.2
+PING 172.17.0.2 (172.17.0.2) 56(84) bytes of data.
+^C
+--- 172.17.0.2 ping statistics ---
+6 packets transmitted, 0 received, 100% packet loss, time 5123ms
+
+root@f6f3ef4a468f:/# docker run -d --name secure_cust1 --network mycust-net 
+.dockerenv            dev/                  etc/                  lib64/                opt/                  run/                  sys/                  var/                  
+bin/                  docker-entrypoint.d/  home/                 media/                proc/                 sbin/                 tmp/                  
+boot/                 docker-entrypoint.sh  lib/                  mnt/                  root/                 srv/                  usr/                  
+root@f6f3ef4a468f:/# docker run -d --name secure_cust1 --network mycust-net 
+.dockerenv            dev/                  etc/                  lib64/                opt/                  run/                  sys/                  var/                  
+bin/                  docker-entrypoint.d/  home/                 media/                proc/                 sbin/                 tmp/                  
+boot/                 docker-entrypoint.sh  lib/                  mnt/                  root/                 srv/                  usr/                  
+root@f6f3ef4a468f:/# docker run -d --name secure_cust1 --network mycust-net nginx
+bash: docker: command not found
+root@f6f3ef4a468f:/# exit
+exit
+ubuntu@ip-172-31-9-158:~$ docker run -d --name secure_cust1 --network mycust-net nginx
+18e457c244f586a3c9163ee93fc7d1aa34a2426e3708a368d127876ebf9cc522
+ubuntu@ip-172-31-9-158:~$ docker run -itd --network mycust-net nginx bash
+ebce10e0845cd57dd482a7e20671ab02c529b4e986f1aa7ef8192565cacb6520
+ubuntu@ip-172-31-9-158:~$ docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED              STATUS              PORTS     NAMES
+ebce10e0845c   nginx          "/docker-entrypoint.…"   37 seconds ago       Up 37 seconds       80/tcp    ecstatic_cori
+18e457c244f5   nginx          "/docker-entrypoint.…"   About a minute ago   Up About a minute   80/tcp    secure_cust1
+f6f3ef4a468f   nginx:latest   "/docker-entrypoint.…"   11 minutes ago       Up 11 minutes       80/tcp    secure_cust
+807ad56b0de5   nginx          "/docker-entrypoint.…"   20 minutes ago       Up 20 minutes       80/tcp    logout
+3a501f40e29e   nginx          "/docker-entrypoint.…"   21 minutes ago       Up 21 minutes       80/tcp    login
+ubuntu@ip-172-31-9-158:~$ docker run -itd --network mycust-net nginx sh
+379fa4e7662af20b6c5019999216b0bf16604c00c9fab2429ed63bff7c75e784
+ubuntu@ip-172-31-9-158:~$ docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED              STATUS              PORTS     NAMES
+379fa4e7662a   nginx          "/docker-entrypoint.…"   17 seconds ago       Up 16 seconds       80/tcp    vibrant_chandrasekhar
+ebce10e0845c   nginx          "/docker-entrypoint.…"   About a minute ago   Up About a minute   80/tcp    ecstatic_cori
+18e457c244f5   nginx          "/docker-entrypoint.…"   2 minutes ago        Up 2 minutes        80/tcp    secure_cust1
+f6f3ef4a468f   nginx:latest   "/docker-entrypoint.…"   11 minutes ago       Up 11 minutes       80/tcp    secure_cust
+807ad56b0de5   nginx          "/docker-entrypoint.…"   21 minutes ago       Up 21 minutes       80/tcp    logout
+3a501f40e29e   nginx          "/docker-entrypoint.…"   22 minutes ago       Up 22 minutes       80/tcp    login
+ubuntu@ip-172-31-9-158:~$ docker run -it --name new --network mycust-net nginx sh
+# 
+# 
+# 
+# 
+# 
+# wxit
+sh: 6: wxit: not found
+# exit
+ubuntu@ip-172-31-9-158:~$ docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED              STATUS              PORTS     NAMES
+379fa4e7662a   nginx          "/docker-entrypoint.…"   About a minute ago   Up About a minute   80/tcp    vibrant_chandrasekhar
+ebce10e0845c   nginx          "/docker-entrypoint.…"   3 minutes ago        Up 3 minutes        80/tcp    ecstatic_cori
+18e457c244f5   nginx          "/docker-entrypoint.…"   4 minutes ago        Up 4 minutes        80/tcp    secure_cust1
+f6f3ef4a468f   nginx:latest   "/docker-entrypoint.…"   13 minutes ago       Up 13 minutes       80/tcp    secure_cust
+807ad56b0de5   nginx          "/docker-entrypoint.…"   23 minutes ago       Up 23 minutes       80/tcp    logout
+3a501f40e29e   nginx          "/docker-entrypoint.…"   24 minutes ago       Up 24 minutes       80/tcp    login
+ubuntu@ip-172-31-9-158:~$ docker stop
+docker: 'docker stop' requires at least 1 argument
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+See 'docker stop --help' for more information
+ubuntu@ip-172-31-9-158:~$ docker stop all
+Error response from daemon: No such container: all
+ubuntu@ip-172-31-9-158:~$ docker stop vibrant_chandrasekhar ecstatic_cori secure_cust secure_cust1 logout login 
+vibrant_chandrasekhar
+ecstatic_cori
+secure_cust
+secure_cust1
+logout
+login
+ubuntu@ip-172-31-9-158:~$ dcoker ps
+Command 'dcoker' not found, did you mean:
+  command 'docker' from snap docker (28.1.1+1)
+  command 'docker' from deb podman-docker (3.4.4+ds1-1ubuntu1.22.04.3)
+  command 'docker' from deb docker.io (26.1.3-0ubuntu1~22.04.1)
+See 'snap info <snapname>' for additional versions.
+ubuntu@ip-172-31-9-158:~$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+ubuntu@ip-172-31-9-158:~$ 
+ubuntu@ip-172-31-9-158:~$ 
+ubuntu@ip-172-31-9-158:~$ 
+ubuntu@ip-172-31-9-158:~$ 
+ubuntu@ip-172-31-9-158:~$ 
+ubuntu@ip-172-31-9-158:~$ 
+ubuntu@ip-172-31-9-158:~$ 
+ubuntu@ip-172-31-9-158:~$ 
+ubuntu@ip-172-31-9-158:~$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+ubuntu@ip-172-31-9-158:~$ docker ps -a
+CONTAINER ID   IMAGE          COMMAND                  CREATED             STATUS                           PORTS     NAMES
+539a79db4f2f   nginx          "/docker-entrypoint.…"   About an hour ago   Exited (127) About an hour ago             new
+379fa4e7662a   nginx          "/docker-entrypoint.…"   About an hour ago   Exited (137) About an hour ago             vibrant_chandrasekhar
+ebce10e0845c   nginx          "/docker-entrypoint.…"   About an hour ago   Exited (137) About an hour ago             ecstatic_cori
+18e457c244f5   nginx          "/docker-entrypoint.…"   About an hour ago   Exited (0) About an hour ago               secure_cust1
+f6f3ef4a468f   nginx:latest   "/docker-entrypoint.…"   2 hours ago         Exited (0) About an hour ago               secure_cust
+807ad56b0de5   nginx          "/docker-entrypoint.…"   2 hours ago         Exited (0) About an hour ago               logout
+3a501f40e29e   nginx          "/docker-entrypoint.…"   2 hours ago         Exited (0) About an hour ago               login
+ubuntu@ip-172-31-9-158:~$ docker prune
+docker: unknown command: docker prune
+
+Run 'docker --help' for more information
+ubuntu@ip-172-31-9-158:~$ docker container prune
+WARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+539a79db4f2ffa5b6d17372a3d9c1c92e5cbcf487226aedf63953ff1f581bb86
+379fa4e7662af20b6c5019999216b0bf16604c00c9fab2429ed63bff7c75e784
+ebce10e0845cd57dd482a7e20671ab02c529b4e986f1aa7ef8192565cacb6520
+18e457c244f586a3c9163ee93fc7d1aa34a2426e3708a368d127876ebf9cc522
+f6f3ef4a468f7f6b2628e96cb5474d3a4ffcae305c978ac7caafaf5abc8f75f7
+807ad56b0de5a0e616e13beb555880d3802b25b7773925bfcc038efaadd899d9
+3a501f40e29e788fdb841b64b4d12cfb735ea5640de895b4828d61784b9bb7a3
+
+Total reclaimed space: 65.74MB
+ubuntu@ip-172-31-9-158:~$ docker volume ls
+DRIVER    VOLUME NAME
+ubuntu@ip-172-31-9-158:~$ docker volume create myvol
+myvol
+ubuntu@ip-172-31-9-158:~$ docker volume ls
+DRIVER    VOLUME NAME
+local     myvol
+ubuntu@ip-172-31-9-158:~$ docker volume inspect myvol
+[
+    {
+        "CreatedAt": "2025-07-23T07:26:08Z",
+        "Driver": "local",
+        "Labels": null,
+        "Mountpoint": "/var/lib/docker/volumes/myvol/_data",
+        "Name": "myvol",
+        "Options": null,
+        "Scope": "local"
+    }
+]
+ubuntu@ip-172-31-9-158:~$ docker run -d --name cont1 mysql
+Unable to find image 'mysql:latest' locally
+latest: Pulling from library/mysql
+62efe2b176c9: Pull complete 
+736f5014e23e: Pull complete 
+d8cbbf99b1d8: Pull complete 
+42dcfa514f37: Pull complete 
+0f4e1544ec0b: Pull complete 
+2702f0bc0b03: Pull complete 
+3933202e133d: Pull complete 
+408de5f91115: Pull complete 
+8cf481282f11: Pull complete 
+77a166a67589: Pull complete 
+Digest: sha256:14a332779a182411bd990b46c69da33a004a8e287d1f8b91a72b866f2f17ba31
+Status: Downloaded newer image for mysql:latest
+ff6549edf61e91ae5ea0ffa4551e79337ca2e6290b9cad41502feef17f766158
+ubuntu@ip-172-31-9-158:~$ mysql
+Command 'mysql' not found, but can be installed with:
+sudo apt install mysql-client-core-8.0     # version 8.0.41-0ubuntu0.22.04.1, or
+sudo apt install mariadb-client-core-10.6  # version 1:10.6.18-0ubuntu0.22.04.1
+ubuntu@ip-172-31-9-158:~$ docker exec -it cont1 bash
+Error response from daemon: container ff6549edf61e91ae5ea0ffa4551e79337ca2e6290b9cad41502feef17f766158 is not running
+ubuntu@ip-172-31-9-158:~$ docker exec -it cont1 sh
+Error response from daemon: container ff6549edf61e91ae5ea0ffa4551e79337ca2e6290b9cad41502feef17f766158 is not running
+ubuntu@ip-172-31-9-158:~$ docker exec -t cont1 /bin/bash
+Error response from daemon: container ff6549edf61e91ae5ea0ffa4551e79337ca2e6290b9cad41502feef17f766158 is not running
+ubuntu@ip-172-31-9-158:~$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS                          PORTS     NAMES
+ff6549edf61e   mysql     "docker-entrypoint.s…"   About a minute ago   Exited (1) About a minute ago             cont1
+ubuntu@ip-172-31-9-158:~$ docker run -d --name sql1  -e MYSQL_ROOT_PASSWORD=root mysql
+3011b188be566a5f383f74a7c58e48ae4db9b8742b1a1d5acd56542dcd4cc81b
+ubuntu@ip-172-31-9-158:~$ docker exec -it sql1 bash
+bash-5.1# 
+bash-5.1# 
+bash-5.1# mysql
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+bash-5.1# mysql -u root -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 10
+Server version: 9.4.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2025, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> 
+mysql> 
+mysql> q
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'q' at line 1
+mysql> quit;
+Bye
+bash-5.1# 
+bash-5.1# 
+bash-5.1# 
+bash-5.1# exit
+exit
+ubuntu@ip-172-31-9-158:~$ docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS              PORTS                 NAMES
+3011b188be56   mysql     "docker-entrypoint.s…"   About a minute ago   Up About a minute   3306/tcp, 33060/tcp   sql1
+ubuntu@ip-172-31-9-158:~$ docker volume create my-vol-sql2 
+my-vol-sql2
+ubuntu@ip-172-31-9-158:~$ docker run -d \
+  --name sql2 \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -v my-vol-sql2:/var/lib/mysql \
+  mysql
+58256b2e2d1ea743f2e17fdfe9d3cdf2b58bd9a19fbdfc38340b7f5f42072451
+ubuntu@ip-172-31-9-158:~$ docker exec -it sql2 bash
+bash-5.1# 
+bash-5.1# 
+bash-5.1# mysql -u root -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 9.4.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2025, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.004 sec)
+
+mysql> create database DB1
+    -> ;
+Query OK, 1 row affected (0.009 sec)
+
+mysql> use DB1
+Database changed
+mysql> CREATE TABLE table1 (
+    ->   id INT,
+    ->   name VARCHAR(50)
+    -> );
+Query OK, 0 rows affected (0.030 sec)
+
+mysql> INSERT INTO table1 (id, name) VALUES (1, 'Alice');
+Query OK, 1 row affected (0.013 sec)
+
+mysql> INSERT INTO table1 (id, name) VALUES (2, 'Bob');
+Query OK, 1 row affected (0.005 sec)
+
+mysql> INSERT INTO table1 (id, name) VALUES (3, 'Charlie');
+Query OK, 1 row affected (0.005 sec)
+
+mysql> INSERT INTO table1 (id, name) VALUES (4, 'David');
+Query OK, 1 row affected (0.004 sec)
+
+mysql> INSERT INTO table1 (id, name) VALUES (5, 'Eve');
+Query OK, 1 row affected (0.005 sec)
+
+mysql> select * from table1
+    -> ;
++------+---------+
+| id   | name    |
++------+---------+
+|    1 | Alice   |
+|    2 | Bob     |
+|    3 | Charlie |
+|    4 | David   |
+|    5 | Eve     |
++------+---------+
+5 rows in set (0.001 sec)
+
+mysql> exit
+Bye
+bash-5.1# exit
+exit
+ubuntu@ip-172-31-9-158:~$ docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                 NAMES
+58256b2e2d1e   mysql     "docker-entrypoint.s…"   19 minutes ago   Up 19 minutes   3306/tcp, 33060/tcp   sql2
+3011b188be56   mysql     "docker-entrypoint.s…"   26 minutes ago   Up 26 minutes   3306/tcp, 33060/tcp   sql1
+ubuntu@ip-172-31-9-158:~$ docker kill sql2
+sql2
+ubuntu@ip-172-31-9-158:~$ docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                 NAMES
+3011b188be56   mysql     "docker-entrypoint.s…"   27 minutes ago   Up 27 minutes   3306/tcp, 33060/tcp   sql1
+ubuntu@ip-172-31-9-158:~$ docker run -d --name sql3 -e MYSQL_ROOT_PASSWORD=root \
+  -v my-vol-sql2:/var/lib/mysql \
+  mysql
+ae21757757a2a8957dc146938f85468f029d75eeff201900a2bf787a5633be0d
+ubuntu@ip-172-31-9-158:~$ docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                 NAMES
+ae21757757a2   mysql     "docker-entrypoint.s…"   4 seconds ago    Up 3 seconds    3306/tcp, 33060/tcp   sql3
+3011b188be56   mysql     "docker-entrypoint.s…"   28 minutes ago   Up 28 minutes   3306/tcp, 33060/tcp   sql1
+ubuntu@ip-172-31-9-158:~$ docker inspect sql3
+[
+    {
+        "Id": "ae21757757a2a8957dc146938f85468f029d75eeff201900a2bf787a5633be0d",
+        "Created": "2025-07-23T08:01:00.100982545Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "mysqld"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 28970,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2025-07-23T08:01:00.170576019Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:245a6c909dc00c041c6b32045a9d0e42d063f1d6130f5599113d73d69f9154c4",
+        "ResolvConfPath": "/var/lib/docker/containers/ae21757757a2a8957dc146938f85468f029d75eeff201900a2bf787a5633be0d/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/ae21757757a2a8957dc146938f85468f029d75eeff201900a2bf787a5633be0d/hostname",
+        "HostsPath": "/var/lib/docker/containers/ae21757757a2a8957dc146938f85468f029d75eeff201900a2bf787a5633be0d/hosts",
+        "LogPath": "/var/lib/docker/containers/ae21757757a2a8957dc146938f85468f029d75eeff201900a2bf787a5633be0d/ae21757757a2a8957dc146938f85468f029d75eeff201900a2bf787a5633be0d-json.log",
+        "Name": "/sql3",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "my-vol-sql2:/var/lib/mysql"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                47,
+                211
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "ID": "ae21757757a2a8957dc146938f85468f029d75eeff201900a2bf787a5633be0d",
+                "LowerDir": "/var/lib/docker/overlay2/57761838ba5e3a4f4e80492bf9c48eb54b7b8f42de605b92dbc3d270a4407327-init/diff:/var/lib/docker/overlay2/80fc733f0c0561958b182576314f9b1234207cb1e3b83f8648f18653d0dc6231/diff:/var/lib/docker/overlay2/f6c7f5aacb80e54aca934b8f09391959e8796d3c72a3cd1dc5777d9e464cbec7/diff:/var/lib/docker/overlay2/c442efaebb776941cfc175576c85a4c85809eec061316f6cdb49a931bc0c430a/diff:/var/lib/docker/overlay2/02731445417d2926994fad38a1a4b5b6b81bd4b36fd6bb5c36328be9ce7414a8/diff:/var/lib/docker/overlay2/1b68e528e1495ac39218ab4c5fa3b1585421c976a905c6efce39aa4c6c785fe0/diff:/var/lib/docker/overlay2/bceb277b6e53f7a2d4ee3d4c0c28e3b600a10856f20d4a23b7d9168e6970d18f/diff:/var/lib/docker/overlay2/49410024f46d2850b982164e3b2927152d7a6ff28212ba7cd72365019b4fb14e/diff:/var/lib/docker/overlay2/f34e01fa57cfc1f6a6255c59379fcfe357aa415838309f2ddfd6314e22aa2110/diff:/var/lib/docker/overlay2/33e1dd449b41c9077ee52bdf69e73bcf1c6a373a036ab13fdb573eba5ef7758a/diff:/var/lib/docker/overlay2/7da9f780211ea3634b2f39097e7d87419503355a818c841c7b1965449c469e38/diff",
+                "MergedDir": "/var/lib/docker/overlay2/57761838ba5e3a4f4e80492bf9c48eb54b7b8f42de605b92dbc3d270a4407327/merged",
+                "UpperDir": "/var/lib/docker/overlay2/57761838ba5e3a4f4e80492bf9c48eb54b7b8f42de605b92dbc3d270a4407327/diff",
+                "WorkDir": "/var/lib/docker/overlay2/57761838ba5e3a4f4e80492bf9c48eb54b7b8f42de605b92dbc3d270a4407327/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "my-vol-sql2",
+                "Source": "/var/lib/docker/volumes/my-vol-sql2/_data",
+                "Destination": "/var/lib/mysql",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "ae21757757a2",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "3306/tcp": {},
+                "33060/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "MYSQL_ROOT_PASSWORD=root",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.17",
+                "MYSQL_MAJOR=innovation",
+                "MYSQL_VERSION=9.4.0-1.el9",
+                "MYSQL_SHELL_VERSION=9.4.0-1.el9"
+            ],
+            "Cmd": [
+                "mysqld"
+            ],
+            "Image": "mysql",
+            "Volumes": {
+                "/var/lib/mysql": {}
+            },
+            "WorkingDir": "/",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "975d46a09d12e99442874e7f67c1f627cbf5ba1d024854485f738ec517a79bbf",
+            "SandboxKey": "/var/run/docker/netns/975d46a09d12",
+            "Ports": {
+                "3306/tcp": null,
+                "33060/tcp": null
+            },
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "3316f5ce34f85fe177d092b2c8b2ad955b08cb9d24212779e3bcf0571c3ef38e",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.3",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "62:73:9f:92:14:55",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "62:73:9f:92:14:55",
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "bc8c09a3645590bccb4d7c1312ca3df59bd05bb3a8ec11dcf7528f1821f1bc36",
+                    "EndpointID": "3316f5ce34f85fe177d092b2c8b2ad955b08cb9d24212779e3bcf0571c3ef38e",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        }
+    }
+]
+ubuntu@ip-172-31-9-158:~$ docker exec -it sql3 bash
+bash-5.1# 
+bash-5.1# show databases 
+bash: show: command not found
+bash-5.1# mysql -u root -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 9.4.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2025, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> 
+mysql> show databases
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| DB1                |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.004 sec)
+
+mysql> use DB1
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> SELECT * FROM table1
+    -> ;
++------+---------+
+| id   | name    |
++------+---------+
+|    1 | Alice   |
+|    2 | Bob     |
+|    3 | Charlie |
+|    4 | David   |
+|    5 | Eve     |
++------+---------+
+5 rows in set (0.003 sec)
+
+mysql> 
+
