@@ -1,5 +1,42 @@
 ref: https://github.com/sidpalas/devops-directive-docker-course
+# Docker Installation on Ubuntu 22.04
 
+This guide outlines the commands to install Docker Engine, Docker CLI, Buildx, and Docker Compose Plugin on an Ubuntu 22.04 system.
+
+## Step-by-Step Commands
+
+```bash
+# 1. Update package index
+sudo apt-get update
+
+# 2. Install required packages
+sudo apt-get install ca-certificates curl gnupg lsb-release -y
+
+# 3. Create Docker keyrings directory
+sudo mkdir -m 0755 -p /etc/apt/keyrings
+
+# 4. Add Docker’s official GPG key
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+# 5. Set up the Docker repository
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+# 6. Update package index again
+sudo apt-get update
+
+# 7. Install Docker Engine, CLI, containerd, Buildx, and Compose Plugin
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
+
+# 8. Start and enable Docker service
+sudo systemctl start docker
+sudo systemctl enable docker
+
+# 9. Verify Docker installation
+docker version
+```
 ## DOCKER VOLUMES AND MOUNTS
 **Persisting Data Produced by the Application:** (we can also pre install dependencies)
 - Often, our applications produce data that we need to safely persist (e.g. database data, user uploaded data, etc...) even if the containers are destroyed and recreated. 
