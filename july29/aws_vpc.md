@@ -161,3 +161,33 @@ CIDR allows more flexible IP allocation compared to traditional class-based addr
 ---
 
 
+# VPC (Virtual Private Cloud)
+
+A **logically isolated network** in AWS (like your own private data center).
+
+- You choose the **CIDR range** (e.g., `10.0.0.0/24`).
+
+## Inside a VPC, you have:
+
+- **Subnets** (Public & Private)
+- **Route tables**
+- **Gateways** (Internet Gateway / NAT Gateway)
+- **Security controls** (Security Groups, Network ACLs)
+
+---
+
+##  Subnets
+
+A **sub‑division** of your VPC IP range.
+
+- **Public subnet** → Can access the internet via **Internet Gateway**.
+- **Private subnet** → No direct internet access  
+  (can use **NAT Gateway** or **Bastion Host**).
+
+---
+
+##  Bastion Host
+
+- An **EC2 instance** in the **public subnet** used to SSH into private subnet instances.
+- Improves security by **keeping private resources hidden** from the internet.
+
