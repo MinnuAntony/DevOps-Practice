@@ -1,2 +1,12 @@
 Langchain: LLM Orchestration tool
-try langchain - 
+try langchain - aws - bedrock integration
+
+---------
+
+
+
+topic 7:
+
+Created IAM roles
+
+
