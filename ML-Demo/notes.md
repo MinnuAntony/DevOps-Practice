@@ -199,11 +199,7 @@ In **unsupervised learning**, the training data is **unlabeled**.
 The algorithm must find **hidden patterns** or **structures** in the data on its own.  
 There are **no "right answers"** to learn from.
 
-## Unsupervised Learning
-
-In **unsupervised learning**, the training data is **unlabeled**.  
-The algorithm must find **hidden patterns** or **structures** in the data on its own.  
-There are **no "right answers"** to learn from.
+In this approach the machine is given with data that has no labels or categories. It analyzes the data on its own to find patterns, groups or relationships without any prior knowledge. The machine learns by discovering hidden structures within the data without being told what the correct output should be.
 
 ---
 
