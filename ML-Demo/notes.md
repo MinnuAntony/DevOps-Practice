@@ -202,8 +202,11 @@ There are **no "right answers"** to learn from.
 In this approach the machine is given with data that has no labels or categories. It analyzes the data on its own to find patterns, groups or relationships without any prior knowledge. The machine learns by discovering hidden structures within the data without being told what the correct output should be.
 
 ---
+### Clustering:
 
+A clustering is used to group similar data points together. Clustering algorithms work by repeatedly moving data points closer to to the center of their group (cluster) and farther from points in other groups. This helps the algorithm to create clear and meaningful clusters
 ## Example – Customer Segmentation using K-Means Clustering
+
 
 ```python
 import pandas as pd
