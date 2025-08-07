@@ -8,7 +8,6 @@ This technology is widely used across various domains, including:
 - **Natural language processing (NLP)**
 - **Recommendation systems**
 - **Fraud detection**
-- **Portfolio optimization**
 - **Task automation**
 
 By leveraging machine learning, organizations can improve efficiency, make data-driven decisions, and create more adaptive, intelligent systems.
@@ -117,7 +116,6 @@ A simple Python example using **scikit-learn** to predict a value based on a sin
 ```python
 import numpy as np
 from sklearn.linear_model import LinearRegression
-import matplotlib.pyplot as plt
 
 # Sample data
 # X is the input feature (e.g., square footage)
@@ -143,6 +141,39 @@ print(f"Predicted price for a 750 sq ft house: ${predicted_price[0]:,.2f}")
 ###  Classification
 Goal: Predict a category.
 Classification models predict a discrete category or class. For instance, classifying an email as "spam" or "not spam." The output is a label, not a number.
+```python
+import numpy as np
+from sklearn.linear_model import LogisticRegression
+
+# Sample data
+# Feature 1: Number of suspicious words (e.g., "win", "free", "prize")
+# Feature 2: Email length in words
+# Label: 1 = Spam, 0 = Not Spam
+X = np.array([
+    [5, 50],   # 5 suspicious words, 50 words total → spam
+    [0, 100],  # 0 suspicious words, long email → not spam
+    [3, 20],   # short email, some suspicious words → spam
+    [0, 40],   # no suspicious words → not spam
+    [2, 200],  # very long, few suspicious words → not spam
+])
+y = np.array([1, 0, 1, 0, 0])  # labels
+
+# Create the logistic regression model
+model = LogisticRegression()
+
+# Train the model
+model.fit(X, y)
+
+# Predict for a new email
+# Example: 4 suspicious words, 30 words total
+new_email = np.array([[4, 30]])
+prediction = model.predict(new_email)
+
+# Interpret prediction
+label = "Spam" if prediction[0] == 1 else "Not Spam"
+
+print(f"Prediction for the new email: {label}")
+```
 
 Example: Predict if fruit is apple or orange.
 
