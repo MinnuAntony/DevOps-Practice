@@ -1,0 +1,44 @@
+transformer-model architecture
+main compo: - how llms are built
+1. tokenization
+2. based on tokens- vector embedding
+3. positional encoding
+4. normalization
+
+GPTs vs LLMs
+
+LLMs- more preferred in EKS
+
+BOTO3 - (diff from terraform?)
+
+using boto3 also we can create ,list the ec2 instances,bubket etc.
+----------------
+LLM vs LSTM vs RNN
+
+transformer-model architecture -2017 PAPER
+
+LLM creation- can be on the following ways:
+- pre training
+- fine tuning
+- reinforcement 
+
+FINE TUNING IN AWS:
+AMAZON BEDROCK in aws console -> models 
+
+fine tuning - improving wht?
+
+hugging face?
+prompt engineering
+
+BERT
+------------
+-------
+
+LLM  DEPLOYMENT :
+
+BEDROCK API
+------
+
+
+DIFF BW GET AND POST
+
