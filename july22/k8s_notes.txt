@@ -1,0 +1,1046 @@
+taught on 11th : project day- prasanth project
+
+
+kubeadm init
+   72  mkdir -p $HOME/.kube
+   73  kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
+kubectl describe node
+  101  kubectl describe node | grep Taint
+  102  kubectl get node
+  103  kubectl taint node ip-172-31-80-216 node-role.kubernetes.io/control-plane:NoSchedule-
+
+
+
+
+   74  ls
+   75  git clone https://github.com/Prashanth7993/Project-D1
+   76  ls
+   77  cd Project-D1/
+   78  ls
+   79  cd Kubernetes/
+   80  ls
+   82  kubectl create ns project-d1
+   83  kubectl get ns   
+   89  kubectl config set-context --current --namespace=project-d1
+   90  kubectl describe po mysql-deploy-
+   91  kubectl describe po mysql-deploy-0
+   92  kubectl apply -f pv.yaml 
+   93  kubectl apply -f pvc.yaml 
+   94  kubectl apply -f mysql-deploy.yaml 
+   95  kubectl get po
+   99  kubectl get pvc
+  100  kubectl describe node
+  101  kubectl describe node | grep Taint
+  102  kubectl get node
+  103  kubectl taint node ip-172-31-80-216 node-role.kubernetes.io/control-plane:NoSchedule-
+  104  kubectl get po
+
+
+34.207.167.39:30000
+
+
+
+after machines gone-:
+ 71  kubeadm init
+   72  mkdir -p $HOME/.kube
+   73  kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
+   74  kubectl get node
+   75  kubectl taint node ip-172-31-86-124 node-role.kubernetes.io/control-plane:NoSchedule-
+   76  history
+   77  watch -n 1 kubectl get pods -n kube-system
+   78  git clone https://github.com/Prashanth7993/Project-D1
+   79  ls
+   80  cd Project-D1/
+   81  ls
+   82  cd Kubernetes/
+   83  kubectl create ns project-d1
+   84  kubectl get ns
+   85  kubectl config set-context --current --namespace=project-d1
+   86  kubectl apply -f mysql-deploy.yaml
+   87  kubectl describe po mysql-deploy-0
+   88  kubectl apply -f pv.yaml 
+   89  kubectl apply -f pvc.yaml
+   90  kubectl apply -f mysql-deploy.yaml
+   91  kubectl describe po 
+   92  kubectl get po
+   93  kubectl get pvc
+   94  kubectl exec -it mysql-deploy-0 -- /bin/bash
+   95  cd ..
+   96  cd Backend-Java/
+   97  ls
+   98  cd Event_Managment/
+   99  ls
+  100  cd src/main/java/com/EventManagment/Controllers/
+  101  ls
+  102  vim AttendeeController.java 
+  103  cat AttendeeController.java 
+  104  cd
+  105  ls
+  106  ls -a
+  107  cd .ssh/
+  108  ls
+  109  cd
+  110  exit
+  111  ls
+  112  cd Project-D1/
+  113  ls
+  114  cd Kubernetes/
+  115  ls
+  116  kubectl get svc
+  117  cat mysql-service.yaml 
+  118  kubectl apply -f mysql-service.yaml 
+  119  kubectl get svc
+  120  ls
+  121  docker --version
+  122  snap install docker
+  123  cd ..
+  124  docker --version
+  125  cd Kubernetes/
+  126  ls
+  127  kubectl apply -f java-springboot-service.yaml 
+  128  kubectl get svc
+  129  cd ..
+  130  ls
+  131  cd Backend-Java/Event_Managment/
+  132  ls
+  133  cd .
+  134  cd ..
+  135  ls
+  136  ls -a
+  137  cd Event_Managment/
+  138  ls
+  139  cd src/
+  140  ls
+  141  cd main/
+  142  ls
+  143  cd java/com/
+  144  ls
+  145  cd EventManagment/
+  146  ls
+  147  cd Controllers/
+  148  ls
+  149  vim AttendeeController.java 
+  150  vim EventController.java 
+  151  vim TaskController.java 
+  152  cd ..
+  153  ls
+  154  cd ..
+  155  ls
+  156  Backend-Java/
+  157  cd Backend-Java/
+  158  ls
+  159  cd Event_Managment/
+  160  ls
+  161  cat Dockerfile
+  162  docker build -t minnuantony/project-d1-backend .
+  163  docker login
+  164  docker images
+  165  docker push minnuantony/project-d1-backend:latest
+  166  ls
+  167  cd ..
+  168  ls
+  169  cd ..
+  170  ls
+  171  cd Kubernetes/
+  172  ls
+  173  vim springboot-deploy.yaml 
+  174  kubectl apply -f springboot-deploy.yaml 
+  175  kubectl get deploy
+  176  kubectl get svc
+  177  history
+  178  kubectl get deploy
+  179  kubectl get svc
+  180  kubectl get all
+  181  kubectl get all -o wide
+  182  curl -v http://10.32.0.5:8080/api/events
+  183  vim java-springboot-service.yaml 
+  184  kubectl apply -f java-springboot-service.yaml 
+  185  kubectl get svc
+  186  histroy
+  187  history
+
+
+
+----------------------
+after editing cross origin:
+1193cec81853: Pushed 
+880a6d9a5a59: Mounted from library/eclipse-temurin 
+bb64f233ca86: Mounted from library/eclipse-temurin 
+1eb3de508cc3: Mounted from library/eclipse-temurin 
+c2d2b55d55c7: Mounted from library/eclipse-temurin 
+418dccb7d85a: Mounted from library/eclipse-temurin 
+latest: digest: sha256:c623de9e05ae8c68f15de61803ff151bc2c4e51cbb51c1b491b670c5795f7ea1 size: 1785
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# ls
+Dockerfile  mvnw  mvnw.cmd  pom.xml  src
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java# ls
+Event_Managment
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1# ls
+Backend-Java  Frontend-ReactJs  Helm  Jenkinsfile  Kubernetes  README.md
+root@ip-172-31-86-124:/home/ubuntu/Project-D1# cd Kubernetes/
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# ls
+java-springboot-service.yaml  mysql-deploy.yaml  mysql-service.yaml  pv.yaml  pvc.yaml  react-event-deploy.yaml  react-event-service.yaml  springboot-deploy.yaml
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# vim springboot-deploy.yaml 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# kubectl apply -f springboot-deploy.yaml 
+deployment.apps/spring-boot-deploy created
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# kubectl get deploy
+NAME                 READY   UP-TO-DATE   AVAILABLE   AGE
+spring-boot-deploy   1/1     1            1           9s
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# kubectl get svc
+NAME                  TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+mysql                 ClusterIP      None             <none>        3306/TCP         46m
+spring-boot-service   LoadBalancer   10.107.148.114   <pending>     8080:30000/TCP   25m
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# kubectl get svc
+NAME                  TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+mysql                 ClusterIP      None             <none>        3306/TCP         46m
+spring-boot-service   LoadBalancer   10.107.148.114   <pending>     8080:30000/TCP   25m
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# history
+    1  hostnamectl set-hostname kworker
+    2  cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
+    3  overlay
+    4  br_netfilter
+    5  EOF
+    6  sudo modprobe overlay
+    7  sudo modprobe br_netfilter
+    8  cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
+    9  net.bridge.bridge-nf-call-iptables  = 1
+   10  net.bridge.bridge-nf-call-ip6tables = 1
+   11  net.ipv4.ip_forward                 = 1
+   12  EOF
+   13  sudo sysctl --system
+   14  lsmod | grep br_netfilter
+   15  lsmod | grep overlay
+   16  vi /etc/containerd/config.toml 
+   17  systemctl restart containerd
+   18  sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+   19  sudo swapoff -a
+   20  sudo setenforce 0
+   21  sudo sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
+   22  cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
+   23  [kubernetes]
+   24  name=Kubernetes
+   25  baseurl=https://pkgs.k8s.io/core:/stable:/v1.26/rpm/
+   26  enabled=1
+   27  gpgcheck=1
+   28  gpgkey=https://pkgs.k8s.io/core:/stable:/v1.26/rpm/repodata/repomd.xml.key
+   29  exclude=kubelet kubeadm kubectl cri-tools kubernetes-cni
+   30  EOF
+   31  sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
+   32  sudo systemctl enable --now kubelet
+   33  sudo apt-get update
+   34  # apt-transport-https may be a dummy package; if so, you can skip that package
+   35  sudo apt-get install -y apt-transport-https ca-certificates curl
+   36  curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.26/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+   37  cd /etc/apt/sources.list.d/kubernetes.list 
+   38  cd /etc/apt/sources.list.d/
+   39  ls
+   40  rm -rf kubernetes.list 
+   41  sudo apt-get update
+   42  # apt-transport-https may be a dummy package; if so, you can skip that package
+   43  sudo apt-get install -y apt-transport-https ca-certificates curlcurl -fsSL https://pkgs.k8s.io/core:/stable:/v1.26/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+   44  echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.26/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
+   45  sudo apt-get update
+   46  sudo apt-get install -y kubelet kubeadm kubectl
+   47  sudo apt-mark hold kubelet kubeadm kubectl
+   48  kubeadm version
+   49  kubectl version
+   50  # Add Docker's official GPG key:
+   51  sudo apt-get update
+   52  sudo apt-get install ca-certificates curl
+   53  sudo install -m 0755 -d /etc/apt/keyrings
+   54  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+   55  sudo chmod a+r /etc/apt/keyrings/docker.asc
+   56  # Add the repository to Apt sources:
+   57  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+   58    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   59  sudo apt-get update
+   60  sudo apt-get install  containerd.io 
+   61  ls
+   62  cd /etc/containerd/
+   63  ls
+   64  mv * /tmp/
+   65  vi config.toml
+   66  systemctl restart containerd
+   67  sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+   68  sudo swapoff -a
+   69  watch -n 1 kubectl get po -n kube-system
+   70  ip a
+   71  kubeadm init
+   72  mkdir -p $HOME/.kube
+   73  kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
+   74  kubectl get node
+   75  kubectl taint node ip-172-31-86-124 node-role.kubernetes.io/control-plane:NoSchedule-
+   76  history
+   77  watch -n 1 kubectl get pods -n kube-system
+   78  git clone https://github.com/Prashanth7993/Project-D1
+   79  ls
+   80  cd Project-D1/
+   81  ls
+   82  cd Kubernetes/
+   83  kubectl create ns project-d1
+   84  kubectl get ns
+   85  kubectl config set-context --current --namespace=project-d1
+   86  kubectl apply -f mysql-deploy.yaml
+   87  kubectl describe po mysql-deploy-0
+   88  kubectl apply -f pv.yaml 
+   89  kubectl apply -f pvc.yaml
+   90  kubectl apply -f mysql-deploy.yaml
+   91  kubectl describe po 
+   92  kubectl get po
+   93  kubectl get pvc
+   94  kubectl exec -it mysql-deploy-0 -- /bin/bash
+   95  cd ..
+   96  cd Backend-Java/
+   97  ls
+   98  cd Event_Managment/
+   99  ls
+  100  cd src/main/java/com/EventManagment/Controllers/
+  101  ls
+  102  vim AttendeeController.java 
+  103  cat AttendeeController.java 
+  104  cd
+  105  ls
+  106  ls -a
+  107  cd .ssh/
+  108  ls
+  109  cd
+  110  exit
+  111  ls
+  112  cd Project-D1/
+  113  ls
+  114  cd Kubernetes/
+  115  ls
+  116  kubectl get svc
+  117  cat mysql-service.yaml 
+  118  kubectl apply -f mysql-service.yaml 
+  119  kubectl get svc
+  120  ls
+  121  docker --version
+  122  snap install docker
+  123  cd ..
+  124  docker --version
+  125  cd Kubernetes/
+  126  ls
+  127  kubectl apply -f java-springboot-service.yaml 
+  128  kubectl get svc
+  129  cd ..
+  130  ls
+  131  cd Backend-Java/Event_Managment/
+  132  ls
+  133  cd .
+  134  cd ..
+  135  ls
+  136  ls -a
+  137  cd Event_Managment/
+  138  ls
+  139  cd src/
+  140  ls
+  141  cd main/
+  142  ls
+  143  cd java/com/
+  144  ls
+  145  cd EventManagment/
+  146  ls
+  147  cd Controllers/
+  148  ls
+  149  vim AttendeeController.java 
+  150  vim EventController.java 
+  151  vim TaskController.java 
+  152  cd ..
+  153  ls
+  154  cd ..
+  155  ls
+  156  Backend-Java/
+  157  cd Backend-Java/
+  158  ls
+  159  cd Event_Managment/
+  160  ls
+  161  cat Dockerfile
+  162  docker build -t minnuantony/project-d1-backend .
+  163  docker login
+  164  docker images
+  165  docker push minnuantony/project-d1-backend:latest
+  166  ls
+  167  cd ..
+  168  ls
+  169  cd ..
+  170  ls
+  171  cd Kubernetes/
+  172  ls
+  173  vim springboot-deploy.yaml 
+  174  kubectl apply -f springboot-deploy.yaml 
+  175  kubectl get deploy
+  176  kubectl get svc
+  177  history
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# kubectl get deploy
+NAME                 READY   UP-TO-DATE   AVAILABLE   AGE
+spring-boot-deploy   1/1     1            1           111s
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# kubectl get svc
+NAME                  TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+mysql                 ClusterIP      None             <none>        3306/TCP         47m
+spring-boot-service   LoadBalancer   10.107.148.114   <pending>     8080:30000/TCP   27m
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# kubectl get all
+NAME                                      READY   STATUS    RESTARTS   AGE
+pod/mysql-deploy-0                        1/1     Running   0          72m
+pod/spring-boot-deploy-6f7cc4fb87-zrxlw   1/1     Running   0          2m24s
+
+NAME                          TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+service/mysql                 ClusterIP      None             <none>        3306/TCP         48m
+service/spring-boot-service   LoadBalancer   10.107.148.114   <pending>     8080:30000/TCP   27m
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/spring-boot-deploy   1/1     1            1           2m24s
+
+NAME                                            DESIRED   CURRENT   READY   AGE
+replicaset.apps/spring-boot-deploy-6f7cc4fb87   1         1         1       2m24s
+
+NAME                            READY   AGE
+statefulset.apps/mysql-deploy   1/1     72m
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# kubectl get all -o wide
+NAME                                      READY   STATUS    RESTARTS   AGE     IP          NODE               NOMINATED NODE   READINESS GATES
+pod/mysql-deploy-0                        1/1     Running   0          72m     10.32.0.4   ip-172-31-86-124   <none>           <none>
+pod/spring-boot-deploy-6f7cc4fb87-zrxlw   1/1     Running   0          2m34s   10.32.0.5   ip-172-31-86-124   <none>           <none>
+
+NAME                          TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE   SELECTOR
+service/mysql                 ClusterIP      None             <none>        3306/TCP         48m   app=mysql
+service/spring-boot-service   LoadBalancer   10.107.148.114   <pending>     8080:30000/TCP   27m   app=spring-boot-app
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS        IMAGES                                  SELECTOR
+deployment.apps/spring-boot-deploy   1/1     1            1           2m34s   spring-boot-app   minnuantony/project-d1-backend:latest   app=spring-boot-app
+
+NAME                                            DESIRED   CURRENT   READY   AGE     CONTAINERS        IMAGES                                  SELECTOR
+replicaset.apps/spring-boot-deploy-6f7cc4fb87   1         1         1       2m34s   spring-boot-app   minnuantony/project-d1-backend:latest   app=spring-boot-app,pod-template-hash=6f7cc4fb87
+
+NAME                            READY   AGE   CONTAINERS   IMAGES
+
+statefulset.apps/mysql-deploy   1/1     72m   mysql        mysql:8.0
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# curl -v http://10.32.0.5:8080/api/events
+*   Trying 10.32.0.5:8080...
+* TCP_NODELAY set
+* Connected to 10.32.0.5 (10.32.0.5) port 8080 (#0)
+> GET /api/events HTTP/1.1
+> Host: 10.32.0.5:8080
+> User-Agent: curl/7.68.0
+> Accept: */*
+> 
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 
+< Vary: Origin
+< Vary: Access-Control-Request-Method
+< Vary: Access-Control-Request-Headers
+< Content-Type: application/json
+< Transfer-Encoding: chunked
+< Date: Mon, 11 Aug 2025 10:56:09 GMT
+< 
+* Connection #0 to host 10.32.0.5 left intact
+[]root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# vim java-springboot-service.yaml 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# kubectl apply -f java-springboot-service.yaml 
+service/spring-boot-service configured
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# kubectl get svc
+NAME                  TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+mysql                 ClusterIP   None             <none>        3306/TCP         53m
+spring-boot-service   NodePort    10.107.148.114   <none>        8080:30000/TCP   33m
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# histroy
+histroy: command not found
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# history
+    1  hostnamectl set-hostname kworker
+    2  cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
+    3  overlay
+    4  br_netfilter
+    5  EOF
+    6  sudo modprobe overlay
+    7  sudo modprobe br_netfilter
+    8  cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
+    9  net.bridge.bridge-nf-call-iptables  = 1
+   10  net.bridge.bridge-nf-call-ip6tables = 1
+   11  net.ipv4.ip_forward                 = 1
+   12  EOF
+   13  sudo sysctl --system
+   14  lsmod | grep br_netfilter
+   15  lsmod | grep overlay
+   16  vi /etc/containerd/config.toml 
+   17  systemctl restart containerd
+   18  sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+   19  sudo swapoff -a
+   20  sudo setenforce 0
+   21  sudo sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
+   22  cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
+   23  [kubernetes]
+   24  name=Kubernetes
+   25  baseurl=https://pkgs.k8s.io/core:/stable:/v1.26/rpm/
+   26  enabled=1
+   27  gpgcheck=1
+   28  gpgkey=https://pkgs.k8s.io/core:/stable:/v1.26/rpm/repodata/repomd.xml.key
+   29  exclude=kubelet kubeadm kubectl cri-tools kubernetes-cni
+   30  EOF
+   31  sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
+   32  sudo systemctl enable --now kubelet
+   33  sudo apt-get update
+   34  # apt-transport-https may be a dummy package; if so, you can skip that package
+   35  sudo apt-get install -y apt-transport-https ca-certificates curl
+   36  curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.26/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+   37  cd /etc/apt/sources.list.d/kubernetes.list 
+   38  cd /etc/apt/sources.list.d/
+   39  ls
+   40  rm -rf kubernetes.list 
+   41  sudo apt-get update
+   42  # apt-transport-https may be a dummy package; if so, you can skip that package
+   43  sudo apt-get install -y apt-transport-https ca-certificates curlcurl -fsSL https://pkgs.k8s.io/core:/stable:/v1.26/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+   44  echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.26/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
+   45  sudo apt-get update
+   46  sudo apt-get install -y kubelet kubeadm kubectl
+   47  sudo apt-mark hold kubelet kubeadm kubectl
+   48  kubeadm version
+   49  kubectl version
+   50  # Add Docker's official GPG key:
+   51  sudo apt-get update
+   52  sudo apt-get install ca-certificates curl
+   53  sudo install -m 0755 -d /etc/apt/keyrings
+   54  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+   55  sudo chmod a+r /etc/apt/keyrings/docker.asc
+   56  # Add the repository to Apt sources:
+   57  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+   58    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   59  sudo apt-get update
+   60  sudo apt-get install  containerd.io 
+   61  ls
+   62  cd /etc/containerd/
+   63  ls
+   64  mv * /tmp/
+   65  vi config.toml
+   66  systemctl restart containerd
+   67  sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+   68  sudo swapoff -a
+   69  watch -n 1 kubectl get po -n kube-system
+   70  ip a
+   71  kubeadm init
+   72  mkdir -p $HOME/.kube
+   73  kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
+   74  kubectl get node
+   75  kubectl taint node ip-172-31-86-124 node-role.kubernetes.io/control-plane:NoSchedule-
+   76  history
+   77  watch -n 1 kubectl get pods -n kube-system
+   78  git clone https://github.com/Prashanth7993/Project-D1
+   79  ls
+   80  cd Project-D1/
+   81  ls
+   82  cd Kubernetes/
+   83  kubectl create ns project-d1
+   84  kubectl get ns
+   85  kubectl config set-context --current --namespace=project-d1
+   86  kubectl apply -f mysql-deploy.yaml
+   87  kubectl describe po mysql-deploy-0
+   88  kubectl apply -f pv.yaml 
+   89  kubectl apply -f pvc.yaml
+   90  kubectl apply -f mysql-deploy.yaml
+   91  kubectl describe po 
+   92  kubectl get po
+   93  kubectl get pvc
+   94  kubectl exec -it mysql-deploy-0 -- /bin/bash
+   95  cd ..
+   96  cd Backend-Java/
+   97  ls
+   98  cd Event_Managment/
+   99  ls
+  100  cd src/main/java/com/EventManagment/Controllers/
+  101  ls
+  102  vim AttendeeController.java 
+  103  cat AttendeeController.java 
+  104  cd
+  105  ls
+  106  ls -a
+  107  cd .ssh/
+  108  ls
+  109  cd
+  110  exit
+  111  ls
+  112  cd Project-D1/
+  113  ls
+  114  cd Kubernetes/
+  115  ls
+  116  kubectl get svc
+  117  cat mysql-service.yaml 
+  118  kubectl apply -f mysql-service.yaml 
+  119  kubectl get svc
+  120  ls
+  121  docker --version
+  122  snap install docker
+  123  cd ..
+  124  docker --version
+  125  cd Kubernetes/
+  126  ls
+  127  kubectl apply -f java-springboot-service.yaml 
+  128  kubectl get svc
+  129  cd ..
+  130  ls
+  131  cd Backend-Java/Event_Managment/
+  132  ls
+  133  cd .
+  134  cd ..
+  135  ls
+  136  ls -a
+  137  cd Event_Managment/
+  138  ls
+  139  cd src/
+  140  ls
+  141  cd main/
+  142  ls
+  143  cd java/com/
+  144  ls
+  145  cd EventManagment/
+  146  ls
+  147  cd Controllers/
+  148  ls
+  149  vim AttendeeController.java 
+  150  vim EventController.java 
+  151  vim TaskController.java 
+  152  cd ..
+  153  ls
+  154  cd ..
+  155  ls
+  156  Backend-Java/
+  157  cd Backend-Java/
+  158  ls
+  159  cd Event_Managment/
+  160  ls
+  161  cat Dockerfile
+  162  docker build -t minnuantony/project-d1-backend .
+  163  docker login
+  164  docker images
+  165  docker push minnuantony/project-d1-backend:latest
+  163  docker login
+  164  docker images
+  165  docker push minnuantony/project-d1-backend:latest
+  166  ls
+  167  cd ..
+  168  ls
+  169  cd ..
+  170  ls
+  171  cd Kubernetes/
+  172  ls
+  173  vim springboot-deploy.yaml 
+  174  kubectl apply -f springboot-deploy.yaml 
+  175  kubectl get deploy
+  176  kubectl get svc
+  177  history
+  178  kubectl get deploy
+  179  kubectl get svc
+  180  kubectl get all
+  181  kubectl get all -o wide
+  182  curl -v http://10.32.0.5:8080/api/events
+  183  vim java-springboot-service.yaml 
+  184  kubectl apply -f java-springboot-service.yaml 
+  185  kubectl get svc
+  186  histroy
+  187  history
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# curl -v http://10.32.0.5:8080/api/events
+*   Trying 10.32.0.5:8080...
+* TCP_NODELAY set
+* Connected to 10.32.0.5 (10.32.0.5) port 8080 (#0)
+> GET /api/events HTTP/1.1
+> Host: 10.32.0.5:8080
+> User-Agent: curl/7.68.0
+> Accept: */*
+> 
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 
+< Vary: Origin
+< Vary: Access-Control-Request-Method
+< Vary: Access-Control-Request-Headers
+< Content-Type: application/json
+< Transfer-Encoding: chunked
+< Date: Mon, 11 Aug 2025 11:36:36 GMT
+< 
+* Connection #0 to host 10.32.0.5 left intact
+[]root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# curl -X POST \
+>      -H "Content-Type: application/json" \
+>      -d '{
+>            "name": "Annual Tech Summit",
+>            "description": "A gathering for tech enthusiasts and professionals.",
+>            "location": "Virtual",
+>            "date": "2025-10-26"
+>          }' \
+> 
+curl: no URL specified!
+curl: try 'curl --help' or 'curl --manual' for more information
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# kubectl get all -o wide                                    
+NAME                                      READY   STATUS    RESTARTS   AGE    IP          NODE               NOMINATED NODE   READINESS GATES
+pod/mysql-deploy-0                        1/1     Running   0          124m   10.32.0.4   ip-172-31-86-124   <none>           <none>
+pod/spring-boot-deploy-6f7cc4fb87-zrxlw   1/1     Running   0          54m    10.32.0.5   ip-172-31-86-124   <none>           <none>
+
+NAME                          TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE   SELECTOR
+service/mysql                 ClusterIP   None             <none>        3306/TCP         99m   app=mysql
+service/spring-boot-service   NodePort    10.107.148.114   <none>        8080:30000/TCP   79m   app=spring-boot-app
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS        IMAGES                                  SELECTOR
+deployment.apps/spring-boot-deploy   1/1     1            1           54m   spring-boot-app   minnuantony/project-d1-backend:latest   app=spring-boot-app
+
+NAME                                            DESIRED   CURRENT   READY   AGE   CONTAINERS        IMAGES                                  SELECTOR
+replicaset.apps/spring-boot-deploy-6f7cc4fb87   1         1         1       54m   spring-boot-app   minnuantony/project-d1-backend:latest   app=spring-boot-app,pod-template-hash=6f7cc4fb87
+
+NAME                            READY   AGE    CONTAINERS   IMAGES
+statefulset.apps/mysql-deploy   1/1     124m   mysql        mysql:8.0
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# curl -X POST \
+>      -H "Content-Type: application/json" \
+>      -d '{
+>            "name": "Annual Tech Summit",
+>            "description": "A gathering for tech enthusiasts and professionals.",
+>            "location": "Virtual",
+>            "date": "2025-10-26"
+>          }' \
+> http:// 10.32.0.5:8080/api/events
+curl: (3) URL using bad/illegal format or missing URL
+{"id":1,"name":"Annual Tech Summit","description":"A gathering for tech enthusiasts and professionals.","location":"Virtual","date":"2025-10-26","attendees":null,"root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# ls
+java-springboot-service.yaml  mysql-deploy.yaml  mysql-service.yaml  pv.yaml  pvc.yaml  react-event-deploy.yaml  react-event-service.yaml  springboot-deploy.yaml
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1# ls
+Backend-Java  Frontend-ReactJs  Helm  Jenkinsfile  Kubernetes  README.md
+root@ip-172-31-86-124:/home/ubuntu/Project-D1# cd Backend-Java/Event_Managment/
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# cd 
+.gitattributes  .gitignore      .mvn/           Dockerfile      mvnw            mvnw.cmd        pom.xml         src/            
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# cd src/main/
+java/      resources/ 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# cd src/main/resources/application.properties 
+.gitattributes  .gitignore      .mvn/           Dockerfile      mvnw            mvnw.cmd        pom.xml         src/            
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# cd src/main
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src/main# ls
+java  resources
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src/main# cd java/com/EventManagment/
+Config/                         EventManagmentApplication.java  model/                          
+
+Controllers/                    Repository/                     service/                        
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src/main# cd java/com/EventManagment/Con
+Config/      Controllers/ 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src/main# cd java/com/EventManagment/Config/
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src/main/java/com/EventManagment/Config# ls
+WebConfig.java
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src/main/java/com/EventManagment/Config# cat WebConfig.java 
+package com.EventManagment.Config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
+
+        @Override
+        public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/api/**")  // Allow all endpoints
+                .allowedOrigins("http://3.136.165.99:30007")  // React frontend URL
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
+    }
+
+}
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src/main/java/com/EventManagment/Config# vim WebConfig.java 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src/main/java/com/EventManagment/Config# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src/main/java/com/EventManagment/Config# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src/main/java/com/EventManagment/Config# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src/main/java/com/EventManagment/Config# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src/main/java/com/EventManagment/Config# cs ..
+
+Command 'cs' not found, but can be installed with:
+
+apt install csound
+
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src/main/java/com/EventManagment/Config# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src/main/java/com/EventManagment# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src/main/java/com# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src/main/java# cd ..
+
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src/main# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1# ls
+Backend-Java  Frontend-ReactJs  Helm  Jenkinsfile  Kubernetes  README.md
+root@ip-172-31-86-124:/home/ubuntu/Project-D1# cd Frontend-ReactJs/
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs# ls
+event-management-dashboard
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs# ls
+event-management-dashboard
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs# cd event-management-dashboard/
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# ls
+Dockerfile  README.md  package-lock.json  package.json  public  src
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# cd src/
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard/src# ls
+App.css  App.js  components  index.css  index.js  reportWebVitals.js  services  setupTests.js
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard/src# cd se
+bash: cd: se: No such file or directory
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard/src# cd se
+services/      setupTests.js  
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard/src# cd services/
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard/src/services# ls
+api.js
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard/src/services# vim api.js
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard/src/services# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard/src/services# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard/src/services# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard/src/services# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard/src/services# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard/src/services# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard/src# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs# cd
+root@ip-172-31-86-124:~# 
+root@ip-172-31-86-124:~# ls
+snap
+root@ip-172-31-86-124:~# exit
+exit
+ubuntu@ip-172-31-86-124:~$ sudo su
+root@ip-172-31-86-124:/home/ubuntu# 
+root@ip-172-31-86-124:/home/ubuntu# 
+root@ip-172-31-86-124:/home/ubuntu# ls
+Project-D1
+root@ip-172-31-86-124:/home/ubuntu# cd Project-D1/
+root@ip-172-31-86-124:/home/ubuntu/Project-D1# ls
+Backend-Java  Frontend-ReactJs  Helm  Jenkinsfile  Kubernetes  README.md
+root@ip-172-31-86-124:/home/ubuntu/Project-D1# cd Frontend-ReactJs/
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs# ls
+event-management-dashboard
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs# cd event-management-dashboard/
+.gitignore         Dockerfile         README.md          package-lock.json  package.json       public/            src/               
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs# cd event-management-dashboard/
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1# ls
+Backend-Java  Frontend-ReactJs  Helm  Jenkinsfile  Kubernetes  README.md
+root@ip-172-31-86-124:/home/ubuntu/Project-D1# cd Backend-Java/
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java# ls
+Event_Managment
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java# cd Event_Managment/
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# ls
+Dockerfile  mvnw  mvnw.cmd  pom.xml  src
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# cd src/
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src# ls
+main  test
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src# cd main/
+java/      resources/ 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment/src# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# ls
+Dockerfile  mvnw  mvnw.cmd  pom.xml  src
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# docker build -t minnuantony/project-d1-backend .
+[+] Building 12.5s (17/17) FINISHED                                                                                                                 docker:default
+ => [internal] load build definition from Dockerfile                                                                                                          0.0s
+ => => transferring dockerfile: 661B                                                                                                                          0.0s
+ => [internal] load metadata for docker.io/library/eclipse-temurin:21-jre-alpine                                                                              0.1s
+ => [internal] load metadata for docker.io/library/maven:3.9.6-eclipse-temurin-21                                                                             0.1s
+ => [auth] library/eclipse-temurin:pull token for registry-1.docker.io                                                                                        0.0s
+ => [auth] library/maven:pull token for registry-1.docker.io                                                                                                  0.0s
+ => [internal] load .dockerignore                                                                                                                             0.0s
+ => => transferring context: 2B                                                                                                                               0.0s
+ => [build 1/6] FROM docker.io/library/maven:3.9.6-eclipse-temurin-21@sha256:8d63d4c1902cb12d9e79a70671b18ebe26358cb592561af33ca1808f00d935cb                 0.0s
+ => [stage-1 1/3] FROM docker.io/library/eclipse-temurin:21-jre-alpine@sha256:4ca7eff3ab0ef9b41f5fefa35efaeda9ed8d26e161e1192473b24b3a6c348aef                0.0s
+ => [internal] load build context                                                                                                                             0.0s
+ => => transferring context: 3.20kB                                                                                                                           0.0s
+ => CACHED [build 2/6] WORKDIR /usr/src/app                                                                                                                   0.0s
+ => CACHED [build 3/6] COPY pom.xml .                                                                                                                         0.0s
+ => CACHED [build 4/6] RUN mvn dependency:go-offline                                                                                                          0.0s
+ => [build 5/6] COPY . .                                                                                                                                      0.0s
+ => [build 6/6] RUN mvn clean package -DskipTests                                                                                                            11.1s
+ => CACHED [stage-1 2/3] WORKDIR /app                                                                                                                         0.0s 
+ => [stage-1 3/3] COPY --from=build /usr/src/app/target/*.jar app.jar                                                                                         0.1s 
+ => exporting to image                                                                                                                                        0.3s 
+ => => exporting layers                                                                                                                                       0.3s 
+ => => writing image sha256:b5b82cbc64fe8d509dbd3280d6d569163e16922c055a8189ea74f7e3bad165b6                                                                  0.0s 
+ => => naming to docker.io/minnuantony/project-d1-backend                                                                                                     0.0s 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# docker login
+Authenticating with existing credentials... [Username: minnuantony]
+
+i Info → To login with a different account, run 'docker logout' followed by 'docker login'
+
+
+Login Succeeded
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment#  docker push minnuantony/project-d1-backend:latest
+The push refers to repository [docker.io/minnuantony/project-d1-backend]
+365837c7b118: Pushed 
+1193cec81853: Layer already exists 
+880a6d9a5a59: Layer already exists 
+bb64f233ca86: Layer already exists 
+1eb3de508cc3: Layer already exists 
+c2d2b55d55c7: Layer already exists 
+418dccb7d85a: Layer already exists 
+latest: digest: sha256:0c00c2dad6f031ba2131032f72278c6c13a2d210f3a68408632bf3990391384f size: 1785
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java/Event_Managment# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Backend-Java# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1# ls
+Backend-Java  Frontend-ReactJs  Helm  Jenkinsfile  Kubernetes  README.md
+root@ip-172-31-86-124:/home/ubuntu/Project-D1# cd Frontend-ReactJs/
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs# ls
+event-management-dashboard
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs# cd event-management-dashboard/
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# ls
+Dockerfile  README.md  package-lock.json  package.json  public  src
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# docker build -t minnuantony/project-d1-frontend .
+[+] Building 55.8s (18/18) FINISHED                                                                                                                 docker:default
+ => [internal] load build definition from Dockerfile                                                                                                          0.0s
+ => => transferring dockerfile: 306B                                                                                                                          0.0s
+ => [internal] load metadata for docker.io/library/nginx:alpine                                                                                               0.5s
+ => [internal] load metadata for docker.io/library/node:18-alpine                                                                                             0.4s
+ => [auth] library/nginx:pull token for registry-1.docker.io                                                                                                  0.0s
+ => [auth] library/node:pull token for registry-1.docker.io                                                                                                   0.0s
+ => [internal] load .dockerignore                                                                                                                             0.0s
+ => => transferring context: 2B                                                                                                                               0.0s
+ => [builder 1/6] FROM docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e                               3.9s
+ => => resolve docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e                                       0.0s
+ => => sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e 7.67kB / 7.67kB                                                                0.0s
+ => => sha256:929b04d7c782f04f615cf785488fed452b6569f87c73ff666ad553a7554f0006 1.72kB / 1.72kB                                                                0.0s
+ => => sha256:ee77c6cd7c1886ecc802ad6cedef3a8ec1ea27d1fb96162bf03dd3710839b8da 6.18kB / 6.18kB                                                                0.0s
+ => => sha256:f18232174bc91741fdf3da96d85011092101a032a93a388b79e99e69c2d5c870 3.64MB / 3.64MB                                                                0.1s
+ => => sha256:dd71dde834b5c203d162902e6b8994cb2309ae049a0eabc4efea161b2b5a3d0e 40.01MB / 40.01MB                                                              1.0s
+ => => sha256:1e5a4c89cee5c0826c540ab06d4b6b491c96eda01837f430bd47f0d26702d6e3 1.26MB / 1.26MB                                                                0.1s
+ => => extracting sha256:f18232174bc91741fdf3da96d85011092101a032a93a388b79e99e69c2d5c870                                                                     0.3s
+ => => sha256:25ff2da83641908f65c3a74d80409d6b1b62ccfaab220b9ea70b80df5a2e0549 446B / 446B                                                                    0.2s
+ => => extracting sha256:dd71dde834b5c203d162902e6b8994cb2309ae049a0eabc4efea161b2b5a3d0e                                                                     2.6s
+ => => extracting sha256:1e5a4c89cee5c0826c540ab06d4b6b491c96eda01837f430bd47f0d26702d6e3                                                                     0.1s
+ => => extracting sha256:25ff2da83641908f65c3a74d80409d6b1b62ccfaab220b9ea70b80df5a2e0549                                                                     0.0s
+ => [stage-1 1/4] FROM docker.io/library/nginx:alpine@sha256:d67ea0d64d518b1bb04acde3b00f722ac3e9764b3209a9b0a98924ba35e4b779                                 2.4s
+ => => resolve docker.io/library/nginx:alpine@sha256:d67ea0d64d518b1bb04acde3b00f722ac3e9764b3209a9b0a98924ba35e4b779                                         0.0s
+ => => sha256:d67ea0d64d518b1bb04acde3b00f722ac3e9764b3209a9b0a98924ba35e4b779 10.33kB / 10.33kB                                                              0.0s
+ => => sha256:d6adbc7fd47ec44ff968ea826c84f41d0d5a70a2dce4bd030757f9b7fe9040b8 10.78kB / 10.78kB                                                              0.0s
+ => => sha256:845b5424415de5f77dd5753cbb7c1be8bd8e44cc81f20f9705783a02f8848317 2.50kB / 2.50kB                                                                0.0s
+ => => sha256:fd372c3c84a23422bc07489867f8c2e7e99774680380ccf89c0a269b71b5690f 628B / 628B                                                                    0.3s
+ => => sha256:a5585638209eba93a3af07035d353e512187e9884e402ded45565e264bedb7e1 1.81MB / 1.81MB                                                                0.2s
+ => => extracting sha256:a5585638209eba93a3af07035d353e512187e9884e402ded45565e264bedb7e1                                                                     0.2s
+ => => sha256:958a74d6a238e799e7819c7408602b9c5481fa5eda0ee5bcbe1932f685d9d3b9 956B / 956B                                                                    0.4s
+ => => sha256:c1d2dc189e3831ffcb9a19138df97d141f3bd13a13a1513b137cc7ca6e94fa09 405B / 405B                                                                    0.4s
+ => => sha256:828fa206d77bc99972844d67b1a617a841c74f15e71c71e656d1437bd26c15b8 1.21kB / 1.21kB                                                                0.4s
+ => => sha256:bdaad27fd04a102fe15f473a31a82321c0625a6a3603bd9522bf058eb8a194e2 1.40kB / 1.40kB                                                                0.4s
+ => => sha256:f23865b38cc69ad61d7a272610d411a4e66c2ed6ab2f374ff8e7f947ecfffb28 16.78MB / 16.78MB                                                              0.9s
+ => => extracting sha256:fd372c3c84a23422bc07489867f8c2e7e99774680380ccf89c0a269b71b5690f                                                                     0.0s
+ => => extracting sha256:958a74d6a238e799e7819c7408602b9c5481fa5eda0ee5bcbe1932f685d9d3b9                                                                     0.0s
+ => => extracting sha256:c1d2dc189e3831ffcb9a19138df97d141f3bd13a13a1513b137cc7ca6e94fa09                                                                     0.0s
+ => => extracting sha256:828fa206d77bc99972844d67b1a617a841c74f15e71c71e656d1437bd26c15b8                                                                     0.0s
+ => => extracting sha256:bdaad27fd04a102fe15f473a31a82321c0625a6a3603bd9522bf058eb8a194e2                                                                     0.0s
+ => => extracting sha256:f23865b38cc69ad61d7a272610d411a4e66c2ed6ab2f374ff8e7f947ecfffb28                                                                     1.0s
+ => [internal] load build context                                                                                                                             0.0s
+ => => transferring context: 709.82kB                                                                                                                         0.0s
+ => [stage-1 2/4] WORKDIR /usr/share/nginx/html                                                                                                               0.3s
+ => [stage-1 3/4] RUN rm -rf ./*                                                                                                                              0.4s
+ => [builder 2/6] WORKDIR /usr/src/app                                                                                                                        0.1s
+ => [builder 3/6] COPY package*.json ./                                                                                                                       0.0s
+ => [builder 4/6] RUN npm install                                                                                                                            22.8s
+ => [builder 5/6] COPY . .                                                                                                                                    0.1s
+ => [builder 6/6] RUN npm run build                                                                                                                          27.3s
+ => [stage-1 4/4] COPY --from=builder /usr/src/app/build .                                                                                                    0.1s
+ => exporting to image                                                                                                                                        0.1s
+ => => exporting layers                                                                                                                                       0.0s
+ => => writing image sha256:ae080662744d48f6676a5f2e6ce3cf5d6013020ac03d557518528bb8c5e6800e                                                                  0.0s
+ => => naming to docker.io/minnuantony/project-d1-frontend                                                                                                    0.0s
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# docker login
+Authenticating with existing credentials... [Username: minnuantony]
+
+i Info → To login with a different account, run 'docker logout' followed by 'docker login'
+
+
+Login Succeeded
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# docker push minnuantony/project-d1-frontend:latest
+The push refers to repository [docker.io/minnuantony/project-d1-frontend]
+f910ca50ab31: Pushed 
+9a852f98e5b5: Pushed 
+5f70bf18a086: Pushed 
+57fb2e22a07a: Mounted from library/nginx 
+c38bee0b0d28: Mounted from library/nginx 
+26081059fc81: Mounted from library/nginx 
+daa8ffa7606a: Mounted from library/nginx 
+95a6190cfaec: Mounted from library/nginx 
+430a7aa99a19: Mounted from library/nginx 
+77a17eed5d29: Mounted from library/nginx 
+apiVersion: apps/v1
+418dccb7d85a: Mounted from minnuantony/project-d1-backend 
+latest: digest: sha256:5849d1113bdb6c356921a4863cac026550a6402aa16a1cdbd54c2ab0e4ed1413 size: 2612
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# docker images
+REPOSITORY                        TAG       IMAGE ID       CREATED              SIZE
+minnuantony/project-d1-frontend   latest    ae080662744d   About a minute ago   55.3MB
+minnuantony/project-d1-backend    latest    b5b82cbc64fe   8 minutes ago        260MB
+minnuantony/project-d1-backend    <none>    458c1e73db2a   2 hours ago          260MB
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs/event-management-dashboard# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Frontend-ReactJs# cd ..
+root@ip-172-31-86-124:/home/ubuntu/Project-D1# ls
+Backend-Java  Frontend-ReactJs  Helm  Jenkinsfile  Kubernetes  README.md
+root@ip-172-31-86-124:/home/ubuntu/Project-D1# cd Kubernetes/
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# ls
+java-springboot-service.yaml  mysql-deploy.yaml  mysql-service.yaml  pv.yaml  pvc.yaml  react-event-deploy.yaml  react-event-service.yaml  springboot-deploy.yaml
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# ls
+java-springboot-service.yaml  mysql-deploy.yaml  mysql-service.yaml  pv.yaml  pvc.yaml  react-event-deploy.yaml  react-event-service.yaml  springboot-deploy.yaml
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# vim react-event-deploy.yaml 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# kubectl apply -f react-event-deploy.yaml 
+deployment.apps/react-event-deploy-latest created
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# kubectl apply -f springboot-deploy.yaml 
+deployment.apps/spring-boot-deploy unchanged
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# kubectl get svc
+NAME                  TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+mysql                 ClusterIP   None             <none>        3306/TCP         149m
+spring-boot-service   NodePort    10.107.148.114   <none>        8080:30000/TCP   129m
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# kubectl apply -f react-event-service.yaml 
+service/react-event-service created
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# kubectl get all
+NAME                                           READY   STATUS    RESTARTS   AGE
+pod/mysql-deploy-0                             1/1     Running   0          175m
+pod/react-event-deploy-latest-89b7d748-f4j4p   1/1     Running   0          4m56s
+pod/spring-boot-deploy-6f7cc4fb87-zrxlw        1/1     Running   0          105m
+
+NAME                          TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+service/mysql                 ClusterIP      None             <none>        3306/TCP         151m
+service/react-event-service   LoadBalancer   10.101.77.41     <pending>     80:30007/TCP     6s
+service/spring-boot-service   NodePort       10.107.148.114   <none>        8080:30000/TCP   130m
+
+NAME                                        READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/react-event-deploy-latest   1/1     1            1           4m56s
+deployment.apps/spring-boot-deploy          1/1     1            1           105m
+
+NAME                                                 DESIRED   CURRENT   READY   AGE
+replicaset.apps/react-event-deploy-latest-89b7d748   1         1         1       4m56s
+replicaset.apps/spring-boot-deploy-6f7cc4fb87        1         1         1       105m
+
+NAME                            READY   AGE
+statefulset.apps/mysql-deploy   1/1     175m
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
+root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# curl http://34.207.167.39:30000
+{"timestamp":"2025-08-11T12:46:18.212+00:00","status":404,"error":"Not Found","path":"/"}root@ip-172-31-86-124:/home/ubuntu/Project-D1/Kubernetes# 
