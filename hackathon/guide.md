@@ -77,7 +77,12 @@ kubectl apply -f "https://github.com/weaveworks/weave/releases/download/v2.8.1/w
 
 # 5. (Optional) Remove control-plane taint so master can run workloads
 # Skip if your trainer says so
-kubectl taint nodes --all node-role.kubernetes.io/control-plane-
+kubectl describe node | grep Taint
+kubectl get node
+kubectl taint node ip-172-31-80-216 node-role.kubernetes.io/control-plane:NoSchedule-
+
+
+#kubectl taint nodes --all node-role.kubernetes.io/control-plane-
 ```
 
 **💡 Where to change things:**
