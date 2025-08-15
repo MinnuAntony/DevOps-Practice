@@ -1,0 +1,19 @@
+provider "aws" {
+  region  = "us-east-1"  # Changed to North Virginia
+  shared_credentials_files = ["~/.aws/credentials"]
+}
+
+resource "aws_instance" "k8s_master" {
+  # Use a valid Ubuntu AMI ID for the us-east-1 region
+  ami           = "ami-04f59c565deeb2199" 
+  instance_type = "t2.large"             # Medium for kubeadm master
+
+  key_name = "minnunv"          # <-- Change to your key pair name
+
+  # Use the user_data argument to execute the shell script
+  user_data = file("/home/ubuntu/hackathon/master_setup.sh")  #path.module also
+
+  tags = {
+    Name = "Minnu-K8s-Master"
+  }
+}
