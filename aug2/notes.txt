@@ -1,0 +1,27 @@
+terraform:
+
+terraform - connects to cloud by api?
+hashicorp
+-created an aws instance
+
+-vpc 
+
+terraform - aug2 19:15 
+
+
+
+------------------
+
+ECS - vilas sir class
+
+- create new task defintions 
+- create a repo
+- how the task should be distributed - suggested by compute option
+
+service connect - internal lb (not doing now)
+
+create service
+
+
+
+- 
