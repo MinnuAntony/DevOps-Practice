@@ -1,1 +1,11 @@
+docker - attached mode
 
+172.17.0.1 - conatiner ip  - docker inspect <>
+
+docker is just a process,, but how can you execute something inside it?
+
+
+ps -ef - shows all the processes running
+
+
+conatiner itself is a process.. all the processes inside a conatiner is also executing inside the host. so if we kill something from host also killed in conatiner
