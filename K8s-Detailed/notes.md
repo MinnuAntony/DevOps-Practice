@@ -1,3 +1,4 @@
+https://chatgpt.com/share/68a4afc0-e288-800e-b54b-504ecf797d91
 # Kubernetes Pods: Internal Creation Flow (Deep Dive)
 
 > A practical, end‑to‑end walkthrough of what *actually* happens inside a Kubernetes cluster when you create a Pod (or a Deployment that creates Pods)—from `kubectl apply` to packets hitting your container.
