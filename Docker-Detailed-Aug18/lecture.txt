@@ -151,4 +151,119 @@ better to use copy
 or instead of add - - use curl or wget
 this allows combining run layer into other RUN commands to reduce the no. of layers in the image
 
+Volumes:
+
+types: 
+bindmounts
+volumes-types anonymous and named
+TempFS - supported on linux only - in tmpFs when the container goes off the volume also goes. 
+then y is it needed? : in order to reduce the size of the writable data - thus container loads very fast
+
+docker volumes:
+stored inside the dockers root directory(controlled by docker -- access to ony root users) - inside that there is a folder called volume -> inside which a  volume is created.
+
+
+# 🐳 Docker Storage: **Bind Mount vs Volume**
+
+---
+
+## 🔹 1. **Bind Mount**
+
+* A **bind mount** directly maps a directory/file from the **host machine** into the container.
+* You **choose the exact path** on the host.
+* Example:
+
+  ```bash
+  docker run -v /home/minnu/data:/app/data ubuntu
+  ```
+
+  * `/home/minnu/data` → directory on the host.
+  * `/app/data` → directory inside the container.
+  * Whatever you write in `/app/data` is immediately reflected in `/home/minnu/data` on host, and vice versa.
+
+✅ **Pros**:
+
+* Very fast, direct mapping.
+* You control exactly where data is stored.
+
+❌ **Cons**:
+
+* Not portable (depends on host paths).
+* Harder to manage when moving containers between servers.
+* Permissions can get messy.
+
+---
+
+## 🔹 2. **Volume**
+
+* A **volume** is managed by Docker itself (stored under `/var/lib/docker/volumes/`).
+* You **don’t worry about host paths**; Docker manages it.
+* Example:
+
+  ```bash
+  docker run -v my-volume:/app/data ubuntu
+  ```
+
+  * `my-volume` → a Docker-managed volume.
+  * `/app/data` → container directory.
+  * Data is stored in `/var/lib/docker/volumes/my-volume/_data` on host, but you don’t have to care.
+
+✅ **Pros**:
+
+* Portable → can easily move between hosts (via `docker volume` commands).
+* Cleaner and safer → Docker manages everything.
+* Works better with Docker Swarm / Kubernetes.
+
+❌ **Cons**:
+
+* Slightly less transparent (you don’t control the exact host path unless you inspect it).
+
+---
+
+## 🔹 3. Key Differences
+
+| Feature          | **Bind Mount**                       | **Volume**                                      |
+| ---------------- | ------------------------------------ | ----------------------------------------------- |
+| Storage location | Anywhere on host (you decide path)   | Managed by Docker (`/var/lib/docker/volumes/…`) |
+| Portability      | ❌ Host-path dependent                | ✅ Portable, managed by Docker                   |
+| Management       | Manual (host filesystem)             | `docker volume` commands                        |
+| Performance      | Very fast                            | Fast, but slightly abstracted                   |
+| Common use cases | Dev/testing with host files, configs | Databases, persistent app data                  |
+
+---
+
+## 🔹 4. Example Comparison
+
+👉 Bind Mount:
+
+```bash
+docker run -it -v /home/minnu/code:/app ubuntu
+```
+
+* Maps your local `/home/minnu/code` directly to `/app` inside container.
+* Great for development (live code editing).
+
+👉 Volume:
+
+```bash
+docker run -it -v my-db:/var/lib/mysql mysql
+```
+
+* Stores database data in Docker-managed volume `my-db`.
+* Data persists even if container is deleted.
+
+---
+
+✅ **Rule of Thumb**:
+
+* **Bind Mounts** → good for **development** (code sharing, testing).
+* **Volumes** → good for **production** (persistent data, DBs, portability).
+
+---
+
+Would you like me to also explain how **overlay filesystem (COW)** works with these volumes/bind mounts (i.e., how they bypass the writable container layer)?
+
+
+
+
 
