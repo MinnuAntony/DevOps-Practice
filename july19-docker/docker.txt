@@ -19,7 +19,7 @@ What is Docker ?
 # multiple vms can be run on a single machine
 * Docker container will make u feel s if ur using a VM 
 containers: if it fits into a container it ships
-ZDO = Zero Down 
+ZDU = Zero Downtime Upgrade
 
 for example if there is a python application created by a developer and he sends it to Q/A along with the PYTHON and other dependencies required for the application to run.
 This can be carried till production
