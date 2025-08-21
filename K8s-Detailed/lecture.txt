@@ -1,0 +1,88 @@
+Rolling Update:
+A rolling update allows a Deployment update to take place with zero downtime.
+It does this by incrementally replacing the current Pods with new ones.
+The new Pods are scheduled on Nodes with available resources, and Kubernetes waits for those new Pods to start before removing the old Pods.
+
+To roll back the deployment to your last working version, use the rollout undo subcommand:
+kubectl rollout undo deployments/kubernetes-bootcamp
+The rollout undo command reverts the deployment to the previous known state (v2 of the image).
+Updates are versioned and you can revert to any previously known state of a Deployment.
+
+Vertical Pod Autoscaler (VPA) :  can either increase or decrease the CPU and memory allocated to each pod,
+Horizontal Pod Autoscaler (HPA):  can replicate or terminate pods, thus affecting the total pod count. 
+Affecting the cluster capacity as a whole, the Cluster Autoscaler (CA) adds or removes nodes dedicated to
+the cluster to provide the appropriate amount of computing resources needed to host the desired workloads
+
+To check metrics, HPA depends on another Kubernetes resource known as the Metrics Server. 
+The Metrics Server provides standard resource usage measurement data 
+
+Label:
+        Label: A key-value pair that is attached to objects (pods, nodes, etc.) to organize and select them. Labels are used for grouping and filtering.
+
+CNI (Container Network Interface)
+		    Flannel: 
+				Flannel is a popular CNI plugin used for networking in Kubernetes clusters. It provides a simple and easy-to-understand overlay network for container communication.
+			Calico: 
+				Calico is a CNI plugin that supports various networking modes, including Layer 3 routing and BGP. It is designed for scalability and is often used in large-scale Kubernetes deployments.
+			Weave: 
+				Weave is another CNI plugin that provides a simple and lightweight overlay network for Kubernetes clusters. It allows for easy communication between containers across nodes.
+
+ClusterIP: 
+Default service type in Kubernetes.
+Exposes the Service only inside the cluster.
+It gets a virtual IP address (cluster-internal) that other Pods inside the cluster can use to talk to it.
+Cannot be accessed from outside the cluster directly.
+Use case: Internal communication between microservices (e.g., backend ↔ database).
+
+NodePort
+Exposes the Service on each Node’s IP at a static port (between 30000–32767).
+You can access the Service from outside the cluster using:
+<NodeIP>:<NodePort>
+Internally, NodePort forwards traffic to the ClusterIP (so every NodePort service also has a ClusterIP behind it).
+
+
+K8S NETWORKING:
+
+1 . Two containers in the same Pod (same node)
+
+Key idea: All containers in a Pod share the same Linux network namespace. They see the same lo (loopback), same eth0, same Pod IP and routes.
+How they talk
+They can talk over localhost (127.0.0.1)` or the Pod IP because they’re in the same netns.
+No NAT, no kube-proxy, no iptables/ipvs involved.
+Often they use localhost TCP ports or Unix domain sockets on a shared volume (sidecar pattern).
+Internals
+Kubelet creates the Pod sandbox netns.
+CNI attaches a veth pair: eth0 inside the Pod ↔ a veth peer on the host.
+The Pod gets one IP; all its containers use it.
+-----------------------------
+
+Q1. Two containers in the same Pod
+They share the same network namespace → same IP, same eth0.
+They talk via localhost (127.0.0.1).
+CBR / plugin / kube-proxy not involved.
+
+Q2. Two Pods on the same Node
+Each Pod has a veth pair connected to the node’s CBR switch.
+Packets flow directly via that bridge switch.
+Only CBR switch involved.
+Plugin created the bridge, but not in the data path.
+kube-proxy not involved.
+
+Q3. Two Pods on different Nodes
+Pod traffic leaves Node1’s CBR switch.
+CNI plugin handles inter-node delivery:
+Overlay plugins (Flannel VXLAN, Weave) → encapsulate, tunnel, decapsulate.
+Routing plugins (Calico BGP, Cilium) → route directly.
+Packet enters Node2’s CBR switch and is delivered to PodB.
+Path = CBR switch + CNI plugin.
+kube-proxy not involved (direct Pod-to-Pod).
+
+Q4. Service across Nodes
+Pod sends to ServiceIP.
+kube-proxy rewrites (DNAT) ServiceIP → backend PodIP.
+Then delivery works just like Q2 or Q3:
+If backend Pod is local → via same-node CBR switch.
+If backend Pod is remote → via CBR switch + CNI plugin.
+Path = kube-proxy + CBR switch + (plugin if needed)
+
+
