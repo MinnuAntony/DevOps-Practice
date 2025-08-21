@@ -86,3 +86,12 @@ If backend Pod is remote → via CBR switch + CNI plugin.
 Path = kube-proxy + CBR switch + (plugin if needed)
 
 
+----------aug 21 2025------------------
+
+points to discuss : ingress, RBAC,NEetwork policies, secrets,config maps,cron jobs,jobs, probes , volumes
+- INGRESS: 
+In a non-managed cluster, we use Ingress to expose multiple services through a single external IP and manage routing (like example.com/api → backend, example.com/app → frontend) instead of opening separate NodePorts/LoadBalancers for each service.
+
+
+
+
