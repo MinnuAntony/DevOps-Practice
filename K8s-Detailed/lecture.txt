@@ -93,5 +93,10 @@ points to discuss : ingress, RBAC,NEetwork policies, secrets,config maps,cron jo
 In a non-managed cluster, we use Ingress to expose multiple services through a single external IP and manage routing (like example.com/api → backend, example.com/app → frontend) instead of opening separate NodePorts/LoadBalancers for each service.
 
 
+Statefulset :
+
+Why we need it: To run applications that require stable identity, storage, and ordered startup → things like databases, message brokers, distributed systems.
+What it is: A Kubernetes controller that provides each pod a unique, persistent identity and storage, ensuring predictable behavior for stateful apps.
+
 
 
