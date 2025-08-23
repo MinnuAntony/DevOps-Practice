@@ -113,6 +113,34 @@ spec:
 
 ---
 
+### 1. Pods (from an `nginx` Deployment)
+
+```bash
+$ kubectl get po
+NAME                          READY   STATUS    RESTARTS   AGE
+nginx-deployment-6d8f7b9c8d-abc12   1/1     Running   0          3m
+nginx-deployment-6d8f7b9c8d-def34   1/1     Running   0          3m
+nginx-deployment-6d8f7b9c8d-ghi56   1/1     Running   0          3m
+```
+
+--
+
+### 2. Services
+
+```bash
+$ kubectl get svc
+NAME                 TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)        AGE
+nginx-service        ClusterIP      10.96.120.15    <none>          80/TCP         3m
+nginx-nodeport       NodePort       10.96.248.42    <none>          80:30080/TCP   3m
+nginx-loadbalancer   LoadBalancer   10.96.157.89    34.123.45.67    80:31922/TCP   3m
+kubernetes           ClusterIP      10.96.0.1       <none>          443/TCP        10d
+```
+
+* **ClusterIP (`nginx-service`)** → only has a **stable internal IP** (`10.96.120.15`)
+* **NodePort (`nginx-nodeport`)** → maps `ClusterIP:80` to **node IPs on port 30080**
+* **LoadBalancer (`nginx-loadbalancer`)** → cloud provider assigns an **EXTERNAL-IP** (`34.123.45.67`) that maps to internal `ClusterIP` + auto-chosen NodePort (`31922`)
+---
+
 ## When and Why to Use Each
 
 | Service Type     | Accessibility         | Use Case / Why                                                                        |
