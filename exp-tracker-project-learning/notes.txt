@@ -7,3 +7,16 @@ With Ingress:
 Only the Ingress Controller’s Service is exposed externally.
 All services inside the cluster are accessed through the controller, using paths or hostnames defined in Ingress rules.
 Clients don’t need to know the internal service IPs or NodePorts.
+
+
+Service Account:
+by deafult there is a sa callled default
+  from a pod you cannot make API CALLS - actually there is no need for that
+
+
+ kubectl create rolebinding nginx-sa-readonly \
+  --clusterrole=view \
+  --serviceaccount=default:nginx-serviceaccount \
+  --namespace=default
+here cluster role is set to view.
+Role and rolebinding
