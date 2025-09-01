@@ -1,0 +1,9 @@
+Why we use Ingress
+------------------------
+Without Ingress:
+Each service needs its own NodePort or LoadBalancer to be externally accessible.
+This exposes multiple IPs/ports, which is messy and hard to manage.
+With Ingress:
+Only the Ingress Controller’s Service is exposed externally.
+All services inside the cluster are accessed through the controller, using paths or hostnames defined in Ingress rules.
+Clients don’t need to know the internal service IPs or NodePorts.
