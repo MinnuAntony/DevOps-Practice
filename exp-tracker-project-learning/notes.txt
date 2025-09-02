@@ -8,7 +8,7 @@ Only the Ingress Controller’s Service is exposed externally.
 All services inside the cluster are accessed through the controller, using paths or hostnames defined in Ingress rules.
 Clients don’t need to know the internal service IPs or NodePorts.
 
-
+-------------------------------------------------------------------------------------------
 Service Account:
 by deafult there is a sa callled default
   from a pod you cannot make API CALLS - actually there is no need for that
@@ -20,3 +20,74 @@ by deafult there is a sa callled default
   --namespace=default
 here cluster role is set to view.
 Role and rolebinding
+
+
+
+--------------------------------------------------------------------------------------
+Liveness Probe
+A liveness probe checks if your container is still running and healthy. If the probe fails, Kubernetes will automatically restart the container. This is particularly useful for detecting deadlocks, where an application is running but unable to make progress.
+
+Readiness Probe
+A readiness probe checks if your container is ready to start accepting traffic. If the probe fails, Kubernetes will stop sending traffic to the pod. Once the probe succeeds again, the pod will be marked as ready and begin receiving traffic. This is useful for applications that require time to start up, such as loading large data sets or connecting to external databases.
+
+Probes work by performing periodic checks on a container to determine its health and readiness. Kubernetes's agent, the kubelet, runs these checks and takes a predefined action based on the outcome. There are three primary types of probes: liveness, readiness, and startup. All three types can be configured to perform one of three kinds of checks:
+
+HTTP GET: Sends an HTTP request to a specific path and port on the container. The probe succeeds if the response status code is between 200 and 399.
+
+TCP Socket: Attempts to open a TCP connection to a specified port. The probe succeeds if the connection is established.
+
+Exec: Executes a command inside the container. The probe succeeds if the command exits with a status code of 0.
+
+How Probes are Configured and Used
+Each probe type is configured with a set of parameters that dictate its behavior. Here's a breakdown of the key parameters:
+
+initialDelaySeconds: The time (in seconds) the kubelet waits before starting the first probe. This is crucial for giving the container enough time to start up before checks begin.
+
+periodSeconds: The interval (in seconds) between each probe check.
+
+timeoutSeconds: The maximum time (in seconds) the probe is allowed to wait for a response before it's considered a failure.
+
+failureThreshold: The number of consecutive failed attempts required for the probe to be considered a definitive failure.
+
+Liveness Probe
+The liveness probe checks if a container is still "alive" and functioning correctly. If it fails, Kubernetes restarts the container. This is useful for catching deadlocks, where an application is running but can't make progress. The failureThreshold parameter determines how many consecutive failures will trigger a restart.
+
+Readiness Probe
+The readiness probe checks if a container is ready to serve traffic. If it fails, Kubernetes stops sending traffic to the pod by removing its IP address from the service endpoints. This is useful for applications that need to load data, establish connections, or perform other initialization tasks before they can handle requests. Once the readiness probe starts succeeding again for a configured number of times (successThreshold), the pod's IP is added back to the service.
+
+Startup Probe
+A startup probe is designed for applications with a long startup time. If a startup probe is configured, it will run first and disable the liveness and readiness probes until it succeeds. This prevents the other probes from prematurely restarting or removing a slow-starting container from service. Once the startup probe succeeds, the regular liveness and readiness checks begin.
+
+
+frontend.yaml:
+Based on the YAML provided, the liveness and readiness probes check the health of the frontend container by sending HTTP GET requests to port 80. These checks ensure the application is running and ready to handle traffic.
+
+Liveness Probe
+The liveness probe checks if the container is "alive" and functioning.
+
+httpGet: The probe performs an HTTP GET request.
+
+path: /: The request is sent to the root path of the application.
+
+port: 80: The request is sent to port 80, which is where the container is configured to listen.
+
+initialDelaySeconds: 10: The first check will occur 10 seconds after the container starts. This gives the application time to initialize.
+
+periodSeconds: 15: After the first check, Kubernetes will check the container's health every 15 seconds.
+
+failureThreshold: 3: If the probe fails three consecutive times, Kubernetes will consider the container unhealthy and restart it.
+
+Readiness Probe
+The readiness probe checks if the container is ready to accept and process traffic.
+
+httpGet: The probe performs an HTTP GET request.
+
+path: /: The request is sent to the root path of the application.
+
+port: 80: The request is sent to port 80.
+
+initialDelaySeconds: 5: The first check will occur 5 seconds after the container starts.
+
+periodSeconds: 10: After the first check, Kubernetes will check the container's readiness every 10 seconds.
+
+failureThreshold: 3: If the probe fails three consecutive times, Kubernetes will stop sending traffic to the pod. The pod will be marked as "unready" in the service endpoints, and no new connections will be routed to it until the probe succeeds again.
