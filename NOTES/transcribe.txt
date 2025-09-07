@@ -1,0 +1,103 @@
+Perfect 👍 let’s do the same treatment for **Amazon Transcribe** as we did for Jamba — I’ll give you **speaker notes** you can use in class.
+
+---
+
+# 🧑‍🏫 Speaker Notes: **Amazon Transcribe**
+
+---
+
+### **Slide 1 – Introduction**
+
+*"Amazon Transcribe is a **fully managed speech-to-text service** provided by AWS. It takes in spoken audio and returns written text. You can use it for call centers, video subtitles, meeting notes, or any voice-driven application."*
+
+---
+
+### **Slide 2 – What Model Does It Use?**
+
+\*"Under the hood, Amazon Transcribe uses **Automatic Speech Recognition (ASR)** models. These are deep learning models trained on massive amounts of audio data.
+
+* The core architecture is based on **sequence-to-sequence neural networks**, often with **Transformers** or **RNN/CTC (Connectionist Temporal Classification)** layers.
+* AWS doesn’t publish exact model internals, but the technology is similar to models like **Whisper (OpenAI)** or **wav2vec2 (Meta)**.
+* In short: it’s an ML model specialized for mapping sound waves → phonemes → words."\*
+
+---
+
+### **Slide 3 – How It Works (Pipeline)**
+
+\*"The process looks like this:
+
+1. **Audio Input** → microphone, file, or stream.
+2. **Preprocessing** → clean up noise, normalize audio.
+3. **Acoustic Model** → converts sound waves into phonetic units.
+4. **Language Model** → predicts the most likely word sequence.
+5. **Output** → text transcript with timestamps, speaker labels, and punctuation."\*
+
+---
+
+### **Slide 4 – Key Features**
+
+\*"Amazon Transcribe isn’t just raw transcription:
+
+* **Real-time streaming** transcription.
+* **Speaker diarization** → who said what.
+* **Custom vocabulary** → add domain-specific terms (medical, legal, product names).
+* **Channel separation** → for multi-speaker audio (e.g., phone calls).
+* **Timestamps** for each word.
+* **Security & compliance** → HIPAA support for healthcare."\*
+
+---
+
+### **Slide 5 – Why It’s Useful**
+
+\*"Instead of building and training your own ASR model, you can simply call an API and get reliable transcriptions. This saves time, cost, and expertise.
+
+It’s used in:
+
+* Customer support call analysis.
+* Automated subtitles in media.
+* Medical dictation.
+* Legal transcription.
+* Meeting assistants."\*
+
+---
+
+### **Slide 6 – Example with AWS SDK (Python)**
+
+```python
+import boto3
+
+transcribe = boto3.client('transcribe')
+
+job_name = "sample-job"
+job_uri = "s3://your-bucket/audio-file.mp3"
+
+transcribe.start_transcription_job(
+    TranscriptionJobName=job_name,
+    Media={'MediaFileUri': job_uri},
+    MediaFormat='mp3',
+    LanguageCode='en-US'
+)
+
+# Later fetch results
+result = transcribe.get_transcription_job(TranscriptionJobName=job_name)
+print(result['TranscriptionJob']['Transcript'])
+```
+
+---
+
+### **Slide 7 – Summary**
+
+\*"Amazon Transcribe is an **ML-powered ASR service** that makes speech-to-text simple and scalable.
+
+* Uses deep learning ASR models.
+* Offers real-time and batch transcription.
+* Includes features like speaker IDs, timestamps, and custom vocabulary.
+  It’s an example of how AWS wraps advanced ML models into easy-to-use services."\*
+
+---
+
+✅ With these notes, you’ll be able to explain **what Transcribe is, what model type it uses, and how it works**.
+
+---
+
+👉 Do you want me to also prepare a **parallel comparison slide: Jamba vs Transcribe** (LLM vs ASR), so your class sees the difference in ML model types?
