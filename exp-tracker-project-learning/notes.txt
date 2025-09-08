@@ -91,3 +91,14 @@ initialDelaySeconds: 5: The first check will occur 5 seconds after the container
 periodSeconds: 10: After the first check, Kubernetes will check the container's readiness every 10 seconds.
 
 failureThreshold: 3: If the probe fails three consecutive times, Kubernetes will stop sending traffic to the pod. The pod will be marked as "unready" in the service endpoints, and no new connections will be routed to it until the probe succeeds again.
+
+
+If you install kube-prometheus-stack Helm chart:
+
+It sets up Prometheus with Kubernetes service discovery.
+
+Deploys node-exporter as a DaemonSet on every node.
+
+Prometheus automatically finds those node-exporter pods and scrapes them.
+
+So you don’t need to “hardcode” nodes. Prometheus uses Kubernetes API + labels to discover and monitor everything running in your cluster.
