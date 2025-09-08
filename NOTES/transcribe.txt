@@ -82,6 +82,7 @@ print(result['TranscriptionJob']['Transcript'])
 -------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------
 https://docs.aws.amazon.com/transcribe/latest/dg/how-input.html
+https://chatgpt.com/share/68bf10f9-93dc-800e-a367-04079c2da684
 
 
 Amazon Transcribe is a fully managed automatic speech recognition (ASR) service that converts speech to text, making it easy to add speech-to-text capabilities to applications.
