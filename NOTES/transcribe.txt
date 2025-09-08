@@ -1,16 +1,9 @@
-Perfect 👍 let’s do the same treatment for **Amazon Transcribe** as we did for Jamba — I’ll give you **speaker notes** you can use in class.
-
----
 
 # 🧑‍🏫 Speaker Notes: **Amazon Transcribe**
-
----
 
 ### **Slide 1 – Introduction**
 
 *"Amazon Transcribe is a **fully managed speech-to-text service** provided by AWS. It takes in spoken audio and returns written text. You can use it for call centers, video subtitles, meeting notes, or any voice-driven application."*
-
----
 
 ### **Slide 2 – What Model Does It Use?**
 
@@ -20,7 +13,6 @@ Perfect 👍 let’s do the same treatment for **Amazon Transcribe** as we did f
 * AWS doesn’t publish exact model internals, but the technology is similar to models like **Whisper (OpenAI)** or **wav2vec2 (Meta)**.
 * In short: it’s an ML model specialized for mapping sound waves → phonemes → words."\*
 
----
 
 ### **Slide 3 – How It Works (Pipeline)**
 
@@ -31,8 +23,6 @@ Perfect 👍 let’s do the same treatment for **Amazon Transcribe** as we did f
 3. **Acoustic Model** → converts sound waves into phonetic units.
 4. **Language Model** → predicts the most likely word sequence.
 5. **Output** → text transcript with timestamps, speaker labels, and punctuation."\*
-
----
 
 ### **Slide 4 – Key Features**
 
@@ -45,7 +35,6 @@ Perfect 👍 let’s do the same treatment for **Amazon Transcribe** as we did f
 * **Timestamps** for each word.
 * **Security & compliance** → HIPAA support for healthcare."\*
 
----
 
 ### **Slide 5 – Why It’s Useful**
 
@@ -58,8 +47,6 @@ It’s used in:
 * Medical dictation.
 * Legal transcription.
 * Meeting assistants."\*
-
----
 
 ### **Slide 6 – Example with AWS SDK (Python)**
 
@@ -81,9 +68,7 @@ transcribe.start_transcription_job(
 # Later fetch results
 result = transcribe.get_transcription_job(TranscriptionJobName=job_name)
 print(result['TranscriptionJob']['Transcript'])
-```
 
----
 
 ### **Slide 7 – Summary**
 
@@ -93,11 +78,36 @@ print(result['TranscriptionJob']['Transcript'])
 * Offers real-time and batch transcription.
 * Includes features like speaker IDs, timestamps, and custom vocabulary.
   It’s an example of how AWS wraps advanced ML models into easy-to-use services."\*
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+https://docs.aws.amazon.com/transcribe/latest/dg/how-input.html
 
----
 
-✅ With these notes, you’ll be able to explain **what Transcribe is, what model type it uses, and how it works**.
+Amazon Transcribe is a fully managed automatic speech recognition (ASR) service that converts speech to text, making it easy to add speech-to-text capabilities to applications.
+Overview of Amazon Transcribe
+Amazon Transcribe allows developers to integrate speech recognition into their applications, enabling the conversion of both real-time and recorded audio into text. It is designed to handle various accents and noisy environments, providing high accuracy in transcriptions. Key features include:
+Automatic Punctuation: Adds punctuation to transcriptions automatically.
+Speaker Diarization: Identifies and differentiates between multiple speakers in an audio file.
+Custom Vocabulary: Allows users to add specific terms or phrases to improve transcription accuracy.
+Language Support: Supports over 100 languages and dialects, making it versatile for global applications. 
 
----
 
-👉 Do you want me to also prepare a **parallel comparison slide: Jamba vs Transcribe** (LLM vs ASR), so your class sees the difference in ML model types?
+
+
+To use Amazon Transcribe, you need an AWS account. Here are the basic steps to get started:
+Set Up an AWS Account: If you don’t have one, create an AWS account and ensure you have the necessary permissions to access Amazon Transcribe and Amazon S3 (for storing audio files).
+Access the Service: You can use Amazon Transcribe through the AWS Management Console, AWS SDKs, or the command line interface. 
+Upload Audio Files: Store your audio files in an Amazon S3 bucket, as Transcribe can process files directly from S3. 
+
+Create a Transcription Job: Use the console or API to create a transcription job, specifying the audio file location and desired settings. 
+
+Pricing
+Amazon Transcribe operates on a pay-as-you-go pricing model, charging based on the duration of audio transcribed. The first 60 minutes of transcription are free for the first 12 months under the AWS Free Tier. After that, you will be billed based on the seconds of audio processed, with additional charges for features like custom vocabularies and PII redaction. 
+Amazon
+Use Cases
+Amazon Transcribe is widely used across various industries for applications such as:
+Call Center Analytics: Analyzing customer interactions to improve service quality.
+Media and Entertainment: Creating subtitles for videos and enhancing accessibility.
+Healthcare: Transcribing clinical conversations for better record-keeping and analysis. 
+
