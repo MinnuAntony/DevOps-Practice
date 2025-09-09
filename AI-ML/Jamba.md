@@ -2,6 +2,8 @@
 
 # JAMBA MODEL
 
+Jamba is an LLM designed for natural language tasks: text generation, summarization, reasoning, code, and more.
+
 The main motivation behind developing the **Jamba model** is to improve the efficiency of large language models without compromising output quality.
 
 Most mainstream LLMs today are built on the **Transformer architecture**, which relies on the attention mechanism to maintain context. However:
@@ -30,6 +32,40 @@ Key features for developers include:
 The models are also multilingual, supporting **9 languages**, and are available as **open-weight models** on Hugging Face. They are widely accessible across platforms and frameworks, including **AWS, GCP, and others**.
 
 ---
+
+
+## ARCHITECTURE
+
+Its architecture combines three key ideas: Transformers, State Space Models (specifically Mamba), and Mixture of Experts. 
+The goal is to balance reasoning power, efficiency for long sequences, and scalability."
+
+
+Each Jamba block contains both Transformer-style attention layers and Mamba layers.
+Transformer layers provide strong reasoning and in-context learning.
+Mamba layers are much more efficient for long contexts because they don’t rely on quadratic attention.
+Some feedforward layers are replaced by Mixture-of-Experts (MoE) layers, which expand capacity without activating the whole network.
+
+- Layer Ratio
+
+"In the released Jamba model, the ratio of Transformer to Mamba layers is 1:7. 
+That means for every Transformer layer, there are seven Mamba layers. 
+This ratio was found to give the best trade-off between efficiency and quality. So Jamba is mostly Mamba, but still keeps enough Transformers for reasoning."
+
+
+- Mixture of Experts
+
+For MoE:
+Each MoE layer has 16 experts, but only the top 2 are activated per token.
+This gives Jamba a total capacity of 52 billion parameters, but only 12 billion active parameters per token.
+The result is a model that’s very large in potential, but cost-efficient in practice.
+
+- Efficiency Features
+
+One of Jamba’s main strengths is memory efficiency:
+Transformers alone need very large KV caches (key-value memory) for long contexts.
+At 256k tokens, LLaMA-2 70B requires 128GB just for the cache, Mixtral needs 32GB, but Jamba needs only 4GB.
+This means Jamba can run on a single 80GB GPU, unlike many other models of its size.
+
 
 ## Version Timeline Summary
 
