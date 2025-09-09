@@ -63,6 +63,43 @@ Transformers alone need very large KV caches (key-value memory) for long context
 At 256k tokens, LLaMA-2 70B requires 128GB just for the cache, Mixtral needs 32GB, but Jamba needs only 4GB.
 This means Jamba can run on a single 80GB GPU, unlike many other models of its size."*
 
+
+
+
+
+--------------------
+
+Hybrid Transformer-Mamba Architecture
+
+Jamba, introduced by AI21 Labs, is a hybrid model combining:
+
+Transformer layers (for strong reasoning and in-context learning),
+
+Mamba layers (SSM-based layers that are far more efficient on long sequences), and
+
+Mixture-of-Experts (MoE) layers (to expand capacity efficiently).
+AI21
+arXiv
+
+It alternates between Transformer and Mamba layers, forming Jamba blocks. This leverages the reasoning capabilities of Transformers and the sequence efficiency of Mamba.
+AI21
+arXiv
+
+2. Layer Ratio (Transformer vs Mamba)
+
+In each Jamba block, the ratio of Transformer-to-Mamba layers is 1:7. In other words, for every Transformer layer, there are seven Mamba layers.
+NVIDIA Developer
+
+This setup prioritizes Mamba’s long-context efficiency while retaining enough Transformer capacity for high-quality reasoning.
+
+3. Mixture-of-Experts (MoE) Integration
+
+Certain feedforward (MLP) layers are replaced by MoE layers—each containing multiple “experts,” though only a subset are activated during inference.
+
+This enables massive model capacity (high total parameters) while keeping computational cost per token (active parameters) reasonab
+
+
+-------
 Summary
 
 *"So to summarize:
