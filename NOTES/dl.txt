@@ -1,3 +1,36 @@
 https://chatgpt.com/share/68bd2eae-40a4-8000-9e47-1319390c450f
 
 refer google, then gpt of 03
+
+
+
+coursera.org
+https://www.coursera.org › deep-learning
+About our ads
+Deep Learning w/ Andrew Ng | Learn Deep Learning Techniques
+SponsoredUnlock the world of AI with a career certificate from DeepLearning.AI. Flexible online subscription — learn online in 2-3 hours per week. Start today!
+
+Udemy
+udemy.com
+About our ads
+Learn Python with Numpy - Deep Learning Course
+SponsoredShop thousands of high-quality on-demand online courses. 30-day satisfaction guarantee. Learn online at your own pace. Start today with a special offer.
+ 
+Copilot Search Branding
+
+
+Role of Deep Learning
+1
+2
+Deep learning is a transformative subset of machine learning that leverages multi-layered neural networks to simulate the decision-making processes of the human brain. It excels at processing vast amounts of unstructured data, enabling machines to autonomously uncover patterns, make predictions, and solve complex problems.
+
+Deep learning models, such as Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs), are designed to handle specific tasks. CNNs are widely used in computer vision for image recognition and object detection, while RNNs are ideal for natural language processing (NLP) and sequential data tasks like speech recognition. Other architectures, such as Transformers, have revolutionized NLP, powering models like GPT and BERT for tasks like text generation and translation.
+
+Applications of deep learning span diverse fields. In computer vision, it enables object detection, image classification, and segmentation, which are critical for self-driving cars, medical imaging, and surveillance. In NLP, it powers language translation, sentiment analysis, and speech-to-text systems. Generative Adversarial Networks (GANs) and Autoencoders are used for creating realistic images, style transfer, and anomaly detection.
+
+Deep learning also plays a pivotal role in reinforcement learning, where agents learn to make decisions in dynamic environments. This has led to breakthroughs in robotics, game playing, and control systems. Additionally, industries like healthcare, finance, and law enforcement leverage deep learning for predictive analytics, fraud detection, and medical diagnostics
+1
+2
+.
+
+Despite its advantages, deep learning faces challenges such as high computational costs, data dependency, and interpretability issues. However, its ability to handle complex tasks, automate feature extraction, and continually improve with more data makes it indispensable in advancing artificial intelligence
