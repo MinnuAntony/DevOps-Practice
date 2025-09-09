@@ -80,6 +80,10 @@ This means Jamba can run on a single 80GB GPU, unlike many other models of its s
 
 ---
 
+Jamba works by combining Transformer attention, long-sequence state-space layers, and Mixture of Experts to efficiently process extremely long text sequences while reducing compute and memory requirements. This allows it to perform tasks like summarization, reasoning, and code generation with very long context windows.
+
+---
+
 ###  Python Example — Jamba with Bedrock
 
 ```python
