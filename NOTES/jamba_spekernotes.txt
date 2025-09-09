@@ -1,3 +1,5 @@
+https://www.clioapp.ai/research/jamba-xformer-mamba-language-model
+
 Today we’re going to talk about Jamba, a modern large language model (LLM) developed by AI21 Labs.
 
 We all are familiar with LLMs like  GPT, LLaMA, or Claude. 
