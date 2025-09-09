@@ -1,3 +1,6 @@
+https://www.canva.com/design/DAGyIDtzDn4/afvrECeGOZxDEjbtgsDfPg/view?utm_content=DAGyIDtzDn4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfde7bd5442
+
+
 # JAMBA MODEL
 
 The main motivation behind developing the **Jamba model** is to improve the efficiency of large language models without compromising output quality.
