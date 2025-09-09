@@ -78,3 +78,50 @@ This means Jamba can run on a single 80GB GPU, unlike many other models of its s
 
 ---
 
+---
+
+###  Python Example — Jamba with Bedrock
+
+```python
+import boto3
+import json
+
+# Create a Bedrock client (use your AWS region where Bedrock is available)
+bedrock_runtime = boto3.client(
+    service_name="bedrock-runtime",
+    region_name="us-east-1"  # Change to your region
+)
+
+# Choose the Jamba model (Mini or Large)
+# Check AWS Bedrock console for available model IDs in your region
+model_id = "ai21.jamba-1-5-large"   # Example model, can also use jamba-mini
+
+# Your prompt / input text
+prompt = "Summarize the benefits of using Kubernetes for deploying microservices."
+
+# Request payload
+body = {
+    "inputText": prompt,
+    "parameters": {
+        "maxTokens": 200,
+        "temperature": 0.7,
+        "topP": 0.9
+    }
+}
+
+# Invoke the model
+response = bedrock_runtime.invoke_model(
+    modelId=model_id,
+    body=json.dumps(body)
+)
+
+# Parse response
+result = json.loads(response["body"].read())
+print("Generated text:")
+print(result.get("outputText", "No output"))
+```
+
+---
+
+
+
