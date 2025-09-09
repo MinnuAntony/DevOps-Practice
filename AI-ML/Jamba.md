@@ -1,4 +1,3 @@
-https://www.canva.com/design/DAGyIDtzDn4/afvrECeGOZxDEjbtgsDfPg/view?utm_content=DAGyIDtzDn4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfde7bd5442
 
 
 # JAMBA MODEL
@@ -29,4 +28,17 @@ Key features for developers include:
 * Streaming capabilities
 
 The models are also multilingual, supporting **9 languages**, and are available as **open-weight models** on Hugging Face. They are widely accessible across platforms and frameworks, including **AWS, GCP, and others**.
+
+---
+
+## Version Timeline Summary
+
+| Version                  | Release Date    | Highlights                                                                                                                                                                    |
+| ------------------------ | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Jamba (base)**         | March 2024      | Hybrid MoE base model, not instruction-tuned ([arXiv][2], [Hugging Face][1], [AI21][3])                                                                                       |
+| **Jamba 1.5 Mini/Large** | August 22, 2024 | Instruction-tuned; 256K context; fast; multilingual; enterprise-ready features ([AI21][4], [arXiv][8], [PR Newswire][5], [Google Cloud][6], [Amazon Web Services, Inc.][7])   |
+| **Jamba 1.6**            | March 2025      | Enterprise-optimized improvements in speed and quality ([AI21][9], [Wikipedia][10])                                                                                           |
+| **Jamba 1.7 Mini/Large** | \~July 2025     | Current API default; enhanced grounding & instruction following; same long context & hybrid architecture ([AI21 Labs Documentation][11], [Hugging Face][12], [Wikipedia][10]) |
+
+---
 
