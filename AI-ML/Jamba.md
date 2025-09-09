@@ -123,5 +123,54 @@ print(result.get("outputText", "No output"))
 
 ---
 
+# Jamba Usage
+
+## Enterprise Applications
+
+### 1. Document Processing & Summarization
+
+* **Use Case**: Summarizing lengthy documents, contracts, and financial reports.
+* **Example**: Jamba 1.5 Mini is optimized for low-latency processing of long prompts, enabling fast analysis of lengthy documents and data.
+
+### 2. Customer Support
+
+* **Use Case**: Powering virtual assistants and chatbots for customer inquiries.
+* **Example**: Jamba 1.5 Mini is engineered for speed and efficiency in tasks including customer support. 
+
+### 3. Financial Analysis
+
+* **Use Case**: Summarizing financial statements and generating comprehensive financial documents.
+* **Example**: Jamba 1.5 Large excels at complex reasoning tasks across all prompt lengths, making it ideal for applications that require high-quality outputs on both long and short inputs.
+
+## Cloud Integrations
+
+### 1. Amazon Bedrock
+
+* **Integration**: Jamba models are available on Amazon Bedrock, allowing businesses to integrate Jamba into their applications.
+### 2. Google Cloud Vertex AI
+
+* **Integration**: Jamba 1.5 models are available on Google Cloud's Vertex AI, enabling businesses to experiment and build with Jamba's capabilities.
+
+### 3. Microsoft Azure AI
+
+* **Integration**: Jamba 1.5 models are available on Microsoft Azure AI, providing enterprises with access to Jamba's features. 
+
+## Educational Initiatives
+
+### 1. DeepLearning.AI Course
+
+* **Partnership**: AI21 Labs partnered with Andrew Ng’s DeepLearning.AI to offer a course titled "Build Long-Context AI Apps with Jamba," equipping developers with tools to build sophisticated AI agents using Jamba's architecture.
+
+## Developer Tools
+
+### 1. Hugging Face
+
+* **Availability**: Jamba models are available on Hugging Face, allowing developers to experiment and integrate Jamba into their projects.
+
+### 2. NVIDIA AI Catalog
+
+* **Availability**: Jamba models are hosted on NVIDIA's AI catalog, providing optimized access for developers.
+
+
 
 
