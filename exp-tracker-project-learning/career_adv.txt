@@ -1,0 +1,12 @@
+What this code does- Home.jsx
+  
+
+This is the main React page that controls the flow of your app:
+
+Student fills CareerInputForm (basic info like grades, interests).
+
+Then they complete AssessmentForm (quiz questions).
+
+Finally, backend returns career recommendations, which are shown using CareerRecommendations.
+
+So this component is like the orchestrator of the frontend journey.
