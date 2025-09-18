@@ -247,6 +247,94 @@ Docker Images are **layered, immutable, versioned templates** built using a Dock
 
 👉 Do you want me to also add a **diagram showing layers + container writable layer (with CoW)** so this becomes visually crystal clear?
 =============================================================================================
+
+🐳 Docker Images, Layers & Copy-on-Write (CoW)
+1. Docker Images = Stacked Layers
+
+A Docker image isn’t one big file.
+
+It’s built as a series of layers (each instruction in a Dockerfile creates one layer).
+
+Example:
+
+FROM ubuntu:20.04     # base layer
+RUN apt-get install -y python3  # new layer
+COPY app.py /app/     # another layer
+CMD ["python3", "/app/app.py"]  # config
+
+
+Each layer is read-only and stored once on the host (under /var/lib/docker/overlay2/ if using OverlayFS).
+
+2. Running a Container = Adding a Writable Layer
+
+When you docker run ...:
+
+Docker mounts all the image’s layers (read-only).
+
+On top, it creates a small writable layer for that container.
+
+Together they form a unified filesystem (using OverlayFS union mount).
+
+So inside the container, you “see” one complete filesystem, but it’s actually composed of stacked dirs.
+
+3. OverlayFS Internals: lowerdir, upperdir, workdir, merged
+
+OverlayFS works by stacking directories:
+
+lowerdir → all the read-only image layers (shared between containers).
+
+upperdir → container’s writable layer.
+
+workdir → temp area used by OverlayFS internally.
+
+merged → the final combined view (what the container sees as /).
+
+Example (for one container):
+
+/var/lib/docker/overlay2/
+   ├── <layer1>/    (Ubuntu base layer)
+   ├── <layer2>/    (apt-get install python3)
+   ├── <layer3>/    (COPY app.py)
+   ├── <container_id>-diff/     (upperdir - writable)
+   ├── <container_id>-work/     (workdir)
+   └── <container_id>-merged/   (merged view mounted inside container)
+
+4. Copy-on-Write (CoW)
+
+The image layers are read-only.
+
+If a container process tries to modify a file (say /etc/hosts):
+
+Docker copies that file from lowerdir → into upperdir.
+
+Modification happens only in upperdir.
+
+The original in lowerdir stays untouched.
+
+That’s Copy-on-Write: only copy when you need to write.
+👉 Saves space, avoids duplication, and allows many containers to share the same base image.
+
+5. Why Mount Layers at All?
+
+Because without mounting, each container would need a full copy of the image → huge waste of space.
+
+By mounting, all containers can share the same lower layers (read-only).
+
+Only differences (writes) go into their tiny private upperdir.
+
+6. Summary
+
+Images = read-only stacked layers.
+
+Containers = images + a writable layer.
+
+OverlayFS = mounts these layers (lowerdir, upperdir, workdir → merged).
+
+Copy-on-Write = files copied up only when modified.
+
+This design makes Docker containers lightweight, fast, and space-efficient.
+
+=========================================================================================
 Relationship between Docker/Container Runtime and Kubernetes
 Containers need a runtime to exist
 Docker Engine (historically), or now more commonly containerd or CRI-O, is the runtime that actually pulls images, creates containers, and manages their lifecycle.
