@@ -10,3 +10,91 @@ Kubernetes is the orchestrator (what to run, where, and how).
 The container runtime is the executor (actually runs the container processes).
 This loose coupling means Kubernetes is runtime-agnostic: you can swap Docker Engine with containerd or CRI-O, and Kubernetes will still work.
 ----------------------------------------------------------------------------------------------------------------
+
+What do we mean by self-healing in Kubernetes?
+“Self-healing” means that Kubernetes continuously ensures the actual cluster state matches the desired state you defined in your manifests.
+If something goes wrong (a Pod crashes, a Node dies, a container is unhealthy), Kubernetes automatically fixes it without manual intervention.
+
+How does Kubernetes implement self-healing?
+
+Pod restart (CrashLoopBackOff → restart policy)
+If a container inside a Pod crashes, the kubelet on that node restarts it according to the Pod’s restart policy (default is Always).
+This is the most basic self-healing action.
+
+Pod rescheduling (Node failure)
+If a Node itself goes down or becomes unreachable, the control plane detects that Pods on that node are not running.
+The Deployment/ReplicaSet ensures the desired number of replicas are maintained, so Kubernetes reschedules replacement Pods onto healthy nodes.
+
+Replica management (ReplicaSets / Deployments)
+If you declare replicas: 3 in a Deployment, Kubernetes constantly ensures that exactly 3 Pods are running.
+If one dies, a new one is created automatically.
+This maintains availability without manual restart.
+
+Health checks (Probes)
+Liveness probes: If a container is running but stuck (not responding), the kubelet kills and restarts it.
+Readiness probes: If a container isn’t ready, Kubernetes removes it from Service endpoints until it passes the check again.
+This avoids sending traffic to “zombie” Pods.
+
+Controllers & Desired State Loop
+The heart of self-healing is Kubernetes’ control loop:
+User defines desired state → YAML manifests.
+K8s continuously watches actual state → API server, etcd.
+Controllers reconcile differences → take corrective action until they match.
+
+----------------------------------------------------------------------------------------------------
+
+
+Kubernetes Architecture – Who Does What?
+
+Think of Kubernetes as a control plane + worker nodes system.
+
+1. Control Plane (Brains of Kubernetes)
+This is where orchestration logic lives.
+
+API Server
+The “front door” of the cluster.
+All requests (from users, controllers, or kubelets) go through the API server.
+Stores desired state in etcd.
+
+etcd
+Distributed key-value store.
+Holds the desired state of the cluster (what you declared in YAML) and the actual state (reported by nodes).
+
+Controller Manager
+Runs controllers that constantly check cluster state and reconcile differences.
+Example:
+Deployment controller: ensures the correct number of Pods are running.
+Node controller: reacts to node failures.
+
+Scheduler
+Decides where a Pod should run.
+Looks at available nodes, resource requests (CPU, memory), affinity/taints, etc.
+
+2. Worker Nodes (Where containers actually run)
+These are the machines that run your app workloads.
+
+kubelet
+Agent running on every node.
+Talks to the control plane (API server).
+Ensures the containers described in PodSpecs are actually running via the container runtime.
+
+Container Runtime (Docker Engine, containerd, CRI-O)
+Pulls images and runs containers.
+kubelet interacts with it through the CRI (Container Runtime Interface).
+
+kube-proxy
+Maintains networking rules so that Services and Pods can communicate (cluster networking).
+Implements load-balancing for Services at the node level.
+
+3. How Orchestration Actually Works (Step by Step)
+Let’s say you apply a Deployment YAML (kubectl apply -f app.yaml):
+API Server stores your desired state in etcd.
+Deployment Controller sees that you want 3 Pods but none exist → it creates ReplicaSets → ReplicaSets create Pod specs.
+Scheduler assigns each Pod to a suitable Node.
+kubelet on each Node pulls the image and asks the container runtime (e.g., containerd) to start the container.
+kube-proxy updates routing so traffic can reach the Pods through a Service.
+Controllers continuously reconcile: if one Pod crashes, a new one is scheduled automatically.
+
+Kubernetes orchestrates using a control plane (API server, etcd, scheduler, controller manager) that maintains desired state, and workers (kubelet, container runtime, kube-proxy) that enforce it. Controllers keep checking actual vs desired state, and kubelet executes container actions on nodes.
+
+===============================================================================================================================================
