@@ -1,0 +1,12 @@
+Relationship between Docker/Container Runtime and Kubernetes
+Containers need a runtime to exist
+Docker Engine (historically), or now more commonly containerd or CRI-O, is the runtime that actually pulls images, creates containers, and manages their lifecycle.
+Without a runtime, there are no containers.
+Kubernetes needs a runtime to run workloads
+Kubernetes does not run containers itself. It only tells the runtime: “I need a Pod with this container image, these resources, and these configs.”
+The kubelet on each node talks to the runtime (via CRI) to make this happen.
+They are loosely coupled
+Kubernetes is the orchestrator (what to run, where, and how).
+The container runtime is the executor (actually runs the container processes).
+This loose coupling means Kubernetes is runtime-agnostic: you can swap Docker Engine with containerd or CRI-O, and Kubernetes will still work.
+----------------------------------------------------------------------------------------------------------------
