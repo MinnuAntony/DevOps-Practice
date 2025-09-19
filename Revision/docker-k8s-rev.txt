@@ -42,5 +42,27 @@ if you want to run in detached mode - -d
   KUBERNETES:
 
 
+RBAC:
+SUBJECT - user,SA,group (access can be given to any of these)
+
+OBJECT - can be any of the k8s resources
+
+VERBS - create,get , list , update
+
+-> user was created - certifcate signed by CA - 
+-> then create a  role (object + verb is mentioned)
+-> then create a role binding - (subject is attached to role)
+-> cluster role , cluster role , binding (?)
+
+->context ? 
+
 
   
+PROBES:
+liveness - check if the pod is alive- if not , its restarts the pod
+readiness prpbes wait - ?
+startup probes- 
+
+LIMITS:
+soft limit:
+hard limit: 
