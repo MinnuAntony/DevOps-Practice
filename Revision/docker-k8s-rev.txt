@@ -66,3 +66,39 @@ startup probes-
 LIMITS:
 soft limit:
 hard limit: 
+
+
+PV PVC: 
+say the access type,storage class, then a pv which is associated - which should be more than the size of the pvc.
+
+pv pvc- once bound  has one-one relationship
+
+storage mounted to pod.
+
+cant kill pod when pvc is bound.
+
+DIFFERNET ACCESS TYPE:
+RWO  - 
+RWOP 
+ROX 
+RWX
+
+
+RECLAIM POLICY:
+Retain: PV is deleted, data and actual vol is kepted
+Recycle : Data deleted,,act vol kept 
+Delete: Data and actual volume will be deleted
+
+EKS:
+
+Dynamic provisioning - kind Storage class
+
+other advantages of using managed k8s cluster-? 
+Route 53-?
+
+ETCD Encryptions: (not in syllabus)
+
+Configmap and secrets - secrets are only encoded not encrypted.
+
+kind: EncrytptionConfiguration
+you wont apply this yaml,, instead you go t the api servers yaml and tell this kind is created. it will then apply
