@@ -335,6 +335,58 @@ Copy-on-Write = files copied up only when modified.
 This design makes Docker containers lightweight, fast, and space-efficient.
 
 =========================================================================================
+
+=======================k8s workflow===========================
+
+Kubernetes Architecture & Flow (YAML → Running Pods)
+1. You apply a YAML
+kubectl apply -f deployment.yaml
+kubectl is just a CLI tool.
+It talks to the kube-apiserver (the central entry point of the cluster).
+
+2. API Server (Cluster Gateway)
+kube-apiserver validates the YAML.
+Stores the desired state (spec) in etcd (the database of the cluster).
+Example: Deployment spec → “I want 3 replicas of nginx pod”.
+
+3. Controllers Reconcile
+Deployment Controller (inside the controller-manager) sees the new Deployment object in etcd.
+It creates ReplicaSets, which in turn create Pods (desired state: 3 pods).
+These are just objects in etcd at this point. No pods are running yet.
+
+4. Scheduler Decides Placement
+The kube-scheduler watches for pods that are in a “Pending” state (not assigned to any node).
+Scheduler checks:
+Node resources (CPU/RAM)
+Affinity/taints/tolerations
+Policies
+Then it binds the pod to a node (updates etcd with node info).
+
+5. Kubelet on Worker Node
+Each node runs kubelet (an agent).
+The kubelet on the chosen node notices: “A pod is scheduled here for me”.
+Kubelet talks to the container runtime (containerd/CRI-O) to actually pull the image and start the containers.
+
+6. Pod is Running
+Container runtime sets up the pod’s containers, filesystem, and networking (via CNI plugin).
+Kubelet keeps checking container health (liveness/readiness probes).
+It reports pod status back to kube-apiserver → etcd is updated → now desired state = actual state.
+
+7. Services & Networking
+If you also applied a Service, kube-proxy (running on each node) updates iptables/IPVS rules so traffic can reach pods.
+Cluster DNS (CoreDNS) updates so apps can find each other by name.
+
+📌 Complete Flow in Order
+
+kubectl → kube-apiserver (submit YAML)
+API Server → etcd (store desired state)
+Controller Manager (creates ReplicaSet/Pods objects)
+Scheduler (assigns pod to a node)
+kubelet on node (pulls image, starts container via runtime)
+Container runtime (containerd/CRI-O runs actual container)
+kubelet → API server (reports running status)
+Service/kube-proxy (handles networking/routing if needed
+============================================================================
 Relationship between Docker/Container Runtime and Kubernetes
 Containers need a runtime to exist
 Docker Engine (historically), or now more commonly containerd or CRI-O, is the runtime that actually pulls images, creates containers, and manages their lifecycle.
