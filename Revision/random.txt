@@ -7,3 +7,4 @@ qna:
 
 1. fetch vs pull
 2. git diff -  how it save space?
+3. docker image commands - docker files
