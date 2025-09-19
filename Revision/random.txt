@@ -1,3 +1,9 @@
 service lb will create an app lb?
 
 lb ingress
+
+
+qna:
+
+1. fetch vs pull
+2. git diff -  how it save space?
