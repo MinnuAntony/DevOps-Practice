@@ -1,0 +1,46 @@
+CMD - defines the default instructuon that has to be executed when the cont. comes up.
+This command is overridden if arguments are provided to docker run
+
+ENTRYPOINT; Configures the container to run as an executable. The arguments passed to docker run are appended to the ENTRYPOINT command,
+making the CMD instruction serve as default parameter
+
+ARGS? - like variables
+
+Volumes:
+
+-tmpfs: stored in host RAM
+-volumes: - named & anonymous - root dir/volumes/_data   - controllered by docker
+-bindmounts: controlled by host machine
+why bindmounts? - 
+
+NAMED VOL: docke volume create 
+anony: no name is mentioned - comes up with random name (why do we need them?)
+  
+
+  NETWORKING: https://dev.to/nobleman97/docker-networking-101-a-blueprint-for-seamless-container-connectivity-3i5b
+IP: Unique routable address given to all the devices in a network that follows ip proto.
+switch,gateway,nat-denat 
+
+---
+eth 0 is in every hstmachie
+
+docker0 - acts as switch  refer nb
+
+3 networks - bridge,host,none
+
+in host network - cont- is connected directly to host nw.
+--------------------------------------------------
+docker compose
+
+docker compose up
+docker compose build etc. 
+if you want to run in detached mode - -d
+
+-------------
+
+
+  KUBERNETES:
+
+
+
+  
