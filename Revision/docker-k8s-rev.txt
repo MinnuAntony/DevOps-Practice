@@ -79,7 +79,7 @@ cant kill pod when pvc is bound.
 
 DIFFERNET ACCESS TYPE:
 RWO  - 
-RWOP 
+RWOP -
 ROX 
 RWX
 
@@ -102,3 +102,13 @@ Configmap and secrets - secrets are only encoded not encrypted.
 
 kind: EncrytptionConfiguration
 you wont apply this yaml,, instead you go t the api servers yaml and tell this kind is created. it will then apply
+
+
+refer --  ***
+why crashoopbackloff? 
+image name wrong
+wrong env,secrets eetc
+probes failing
+taints?
+
+
