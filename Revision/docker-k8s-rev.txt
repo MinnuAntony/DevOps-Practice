@@ -18,6 +18,10 @@ anony: no name is mentioned - comes up with random name (why do we need them?)
   
 
   NETWORKING: https://dev.to/nobleman97/docker-networking-101-a-blueprint-for-seamless-container-connectivity-3i5b
+
+https://chatgpt.com/share/68cf72e1-3018-800d-b54b-b48f50b84045
+
+
 IP: Unique routable address given to all the devices in a network that follows ip proto.
 switch,gateway,nat-denat 
 
