@@ -116,3 +116,12 @@ probes failing
 taints?
 
 
+terraform:
+
+meta arguments: - terraform based
+prevent destroy 
+ignore changes 
+replaceTrigggredBy
+Provisioners
+(refer chatgpt)
+
