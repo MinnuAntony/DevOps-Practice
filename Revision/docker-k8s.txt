@@ -648,4 +648,122 @@ ExternalName Services don’t handle traffic or ports — they simply provide a 
 ------
 
 ======================
+What are Terraform Provisioners?
 
+Provisioners are instructions that Terraform can run on a resource after it has been created.
+
+They don’t create the resource themselves — the provider handles that.
+
+Provisioners are mainly used to bootstrap, configure, or copy files to a resource.
+
+Think of provisioners as a way to “do extra work” on a resource after Terraform has built it.
+
+🔹 Why Use Provisioners?
+
+Bootstrapping – installing software or packages on VMs.
+
+Copying files – move scripts, configs, or certificates to a resource.
+
+Executing commands – run shell commands, SQL scripts, or custom setup tasks.
+
+Automation after creation – things that cannot be done purely via provider APIs.
+
+⚠️ Note: Terraform recommends using user data, cloud-init, or configuration management tools (Ansible, Chef, Puppet) instead of provisioners whenever possible, because provisioners can make Terraform less predictable.
+
+🔹 Types of Provisioners
+1. local-exec
+
+Runs a command on the machine running Terraform (your laptop or CI/CD runner).
+
+Common use cases:
+
+Triggering scripts
+
+Sending notifications
+
+Running CLI commands
+
+Example:
+
+resource "aws_instance" "example" {
+  ami           = "ami-123456"
+  instance_type = "t2.micro"
+
+  provisioner "local-exec" {
+    command = "echo Instance ${self.id} created!"
+  }
+}
+
+2. remote-exec
+
+Runs commands on the resource itself via SSH (Linux) or WinRM (Windows).
+
+Common use cases:
+
+Installing software
+
+Configuring OS-level settings
+
+Starting services
+
+Example:
+
+provisioner "remote-exec" {
+  inline = [
+    "sudo apt-get update",
+    "sudo apt-get install -y nginx"
+  ]
+  connection {
+    type        = "ssh"
+    host        = self.public_ip
+    user        = "ubuntu"
+    private_key = file("~/.ssh/id_rsa")
+  }
+}
+
+3. file
+
+Copies files or directories from your machine to the remote resource.
+
+Often used in combination with remote-exec.
+
+Example:
+
+provisioner "file" {
+  source      = "setup.sh"
+  destination = "/home/ubuntu/setup.sh"
+
+  connection {
+    type        = "ssh"
+    host        = self.public_ip
+    user        = "ubuntu"
+    private_key = file("~/.ssh/id_rsa")
+  }
+}
+
+🔹 Provisioner Lifecycle
+
+By default, provisioners run during resource creation (create).
+
+They can also run during resource destruction if you add when = destroy.
+
+Example:
+
+provisioner "local-exec" {
+  command = "echo Cleaning up resource"
+  when    = destroy
+}
+
+🔹 Important Notes
+
+Use provisioners as a last resort – rely on providers, user data, or configuration management first.
+
+Idempotency is tricky – provisioner scripts may fail if rerun.
+
+Failures can block Terraform – if a provisioner fails, terraform apply fails too.
+
+🔹 Analogy
+
+Provider = Builder (builds the house)
+
+Provisioner = Interior
