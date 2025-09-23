@@ -102,3 +102,50 @@ Deploys node-exporter as a DaemonSet on every node.
 Prometheus automatically finds those node-exporter pods and scrapes them.
 
 So you don’t need to “hardcode” nodes. Prometheus uses Kubernetes API + labels to discover and monitor everything running in your cluster.
+
+
+---------------------------------------------------------------------------------
+
+
+Perfect! Let’s make a **clear comparison table** for your three workflows (Python / Node / Go) showing **tools used, purpose, and why chosen per language**.
+
+| **Pipeline Step / Tool**                | **User Service (Python)**                | **Frontend (Node.js / React)**           | **Expense Service (Go)**                   | **Purpose / Reason**                                                                   |
+| --------------------------------------- | ---------------------------------------- | ---------------------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------- |
+| **Checkout Code**                       | `actions/checkout@v3`                    | `actions/checkout@v3`                    | `actions/checkout@v3`                      | Standard GitHub Action to fetch repo                                                   |
+| **Setup Runtime**                       | `setup-python@v4`, Python 3.11           | `setup-node@v3`, Node 20                 | `setup-go@v4`, Go 1.21                     | Provides correct language environment for builds/tests                                 |
+| **Dependency Install**                  | `pip install -r requirements.txt`        | `npm ci`                                 | `go mod tidy`                              | Ensures project dependencies are installed and consistent                              |
+| **Linting / Code Style**                | `flake8`                                 | `eslint`                                 | `golint`, `staticcheck`                    | Ensures code style, detects simple bugs and bad practices                              |
+| **Unit Testing**                        | `pytest`                                 | `jest` (`npm test`)                      | Go built-in tests (`go test` can be added) | Validates code correctness                                                             |
+| **SAST (Static Analysis)**              | `bandit`                                 | `eslint security rules`                  | `gosec`                                    | Detects security issues in code (hardcoded secrets, unsafe function calls, injections) |
+| **SCA (Dependency Vulnerability Scan)** | `pip-audit`                              | `npm audit`                              | Can use `trivy fs` (not implemented)       | Detects known CVEs in project dependencies                                             |
+| **License / Compliance Check**          | N/A                                      | `license-checker`                        | N/A                                        | Ensures third-party libraries’ licenses are acceptable                                 |
+| **Docker Build**                        | `docker build` (multi-tag: SHA + latest) | `docker build` (multi-tag: SHA + latest) | `docker build` (multi-tag: SHA + latest)   | Package service into container for deployment                                          |
+| **Container Vulnerability Scan**        | `trivy image`                            | `trivy image`                            | `trivy image`                              | Detects CVEs in base image + installed packages before pushing to registry             |
+| **Push Docker Image**                   | DockerHub                                | DockerHub                                | DockerHub                                  | Publishes image for deployment                                                         |
+| **Update Deployment Manifest**          | `sed + git commit`                       | `sed + git commit`                       | `sed + git commit`                         | Updates image SHA in k8s manifest for GitOps (ArgoCD)                                  |
+| **Secrets Scan (Optional)**             | N/A                                      | N/A                                      | N/A                                        | Could use `trivy fs --scanners secret .` to detect accidental secrets                  |
+
+---
+
+### ✅ Key Takeaways
+
+1. **Language-specific tools**:
+
+   * Python → `flake8`, `bandit`, `pip-audit`
+   * Node → `eslint`, `eslint security plugin`, `npm audit`
+   * Go → `golint`, `staticcheck`, `gosec`
+
+2. **Common DevSecOps steps**:
+
+   * Docker build → Trivy scan → push → update k8s manifest
+
+3. **Why chosen**:
+
+   * Each tool matches the **ecosystem/language best practices**.
+   * Combining SAST + SCA + image scan gives layered security.
+   * GitOps update ensures automatic deployment without manual edits.
+
+---
+
+
+
