@@ -1,0 +1,57 @@
+✅ Example: Launch 3 EC2 instances
+provider "aws" {
+  region = "ap-south-1"
+}
+
+resource "aws_instance" "web" {
+  ami           = "ami-0c55b159cbfafe1f0" # Amazon Linux
+  instance_type = "t2.micro"
+
+  count = 3
+
+  tags = {
+    Name = "web-${count.index}"
+  }
+}
+
+
+✅ Example: Create multiple S3 buckets with different names:
+
+provider "aws" {
+  region = "ap-south-1"
+}
+
+resource "aws_s3_bucket" "my_buckets" {
+  for_each = toset(["logs-bucket", "images-bucket", "backups-bucket"])
+
+  bucket = each.key
+  acl    = "private"
+
+  tags = {
+    Name = each.key
+  }
+}
+
+
+EC2 Instances with Different Types
+
+Instead of creating identical EC2s (count), what if each environment needs a different instance type?
+
+variable "instances" {
+  default = {
+    dev  = "t2.micro"
+    test = "t2.small"
+    prod = "t2.medium"
+  }
+}
+
+resource "aws_instance" "servers" {
+  for_each = var.instances
+
+  ami           = "ami-0c55b159cbfafe1f0"
+  instance_type = each.value
+
+  tags = {
+    Name = "${each.key}-server"
+  }
+}
